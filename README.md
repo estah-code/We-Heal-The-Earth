@@ -1,37 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 We Heal The Earth (Estah)
 
-## Getting Started
+Welcome to the official web application for **We Heal The Earth (Estah)**. 
 
-First, run the development server:
+This project is a modern, responsive website built with Next.js and React, designed to showcase the organization's mission, impact, gallery, programs, and events.
+
+## 🚀 Technologies Used
+
+This project is built using:
+- **Framework:** [Next.js](https://nextjs.org/) (Version 16.1.6)
+- **Library:** [React](https://react.dev/) (Version 19.2.3)
+- **Styling:** Custom CSS (`globals.css`) with responsive design principles
+- **Other Dependencies:** Cheerio (for web scraping/parsing if applicable)
+
+## 📁 Project Structure
+
+- `src/app/`: Contains the Next.js App Router pages (Home, About Us, Contact, Events, FAQ, Gallery, Impact, Programs).
+- `src/components/`: Reusable UI components (Navbar, Footer, ContactForm, HeroBackground, ImpactDashboard, etc.).
+- `src/context/`: React context providers (e.g., ThemeContext for light/dark modes and custom colors).
+- `public/`: Static assets such as images, icons, and logos.
+
+## 🛠️ Getting Started
+
+To run this project locally, follow these steps:
+
+### 1. Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### 2. Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/estah-code/We-Heal-The-Earth.git
+cd We-Heal-The-Earth
+npm install
+```
+
+### 3. Running the Development Server
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The pages will automatically reload if you make changes to the code.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+And to start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/estah-code/We-Heal-The-Earth/issues) if you want to contribute.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Estah
+This project is private and owned by Estah. All rights reserved.
