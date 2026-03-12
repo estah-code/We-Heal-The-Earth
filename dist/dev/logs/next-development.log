@@ -1,3 +1,1 @@
-[00:00:01.599] Server  LOG     ✓ Ready in 865ms
-[00:00:19.546] Server  ERROR   ⨯ Error: export const dynamic = "force-static"/export const revalidate not configured on route "/api/gallery" with "output: export". See more info here: https://nextjs.org/docs/advanced-features/static-html-export
-[00:00:20.668] Browser ERROR   Failed to fetch latest data {"column":66,"line":1191,"sourceURL":"http://localhost:3000/_next/static/chunks/src_b5ae87c7._.js"}
+[00:00:00.889] Server  LOG     ✓ Ready in 614ms
