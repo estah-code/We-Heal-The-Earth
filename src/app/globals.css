@@ -931,6 +931,11 @@ img {
   box-shadow: 2px 2px 0 var(--text-dark);
 }
 
+.sold-out-badge.active-badge {
+  background: var(--lime);
+  box-shadow: 2px 2px 0 var(--text-dark);
+}
+
 .view-details {
   color: var(--lime);
   font-size: 0.85rem;

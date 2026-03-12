@@ -16,6 +16,8 @@ import PhotoSlider from "@/components/PhotoSlider";
 import EventCard from "@/components/EventCard";
 import { TreeLoader } from "@/components/TreeLoader";
 
+import { EVENTS_DATA } from "@/data/events";
+
 export default function HomePage() {
     const [latestBlogs, setLatestBlogs] = useState([]);
     const [loadingBlogs, setLoadingBlogs] = useState(true);
@@ -249,17 +251,9 @@ export default function HomePage() {
                         </Link>
                     </div>
                     <div className="events-row">
-                        <EventCard />
-                        <EventCard
-                            isPlaceholder={true}
-                            title="Community Tree Plantation"
-                            category="#Environment"
-                        />
-                        <EventCard
-                            isPlaceholder={true}
-                            title="Rural Education Drive"
-                            category="#Education"
-                        />
+                        {EVENTS_DATA.map((event, idx) => (
+                            <EventCard key={idx} {...event} />
+                        ))}
                     </div>
                 </div>
             </section>
@@ -849,9 +843,30 @@ export default function HomePage() {
           text-decoration: none;
         }
         .events-row {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          display: flex;
           gap: 30px;
+          overflow-x: auto;
+          padding: 10px 10px 30px;
+          margin: 0 -10px;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: thin;
+          scrollbar-color: var(--lime) rgba(255, 255, 255, 0.1);
+        }
+        .events-row::-webkit-scrollbar {
+          height: 8px;
+        }
+        .events-row::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
+        }
+        .events-row::-webkit-scrollbar-thumb {
+          background: var(--lime);
+          border-radius: 10px;
+        }
+        :global(.events-row > *) {
+          flex: 0 0 400px;
+          min-width: 400px;
+          scroll-snap-align: start;
         }
         .photos-grid {
           display: grid;

@@ -57,6 +57,8 @@ function fireConfetti(canvas) {
 
 const tickerText = 'RUN FOR EDUCATION — 22 MARCH 2026 — GACHIBOWLI STADIUM, HYDERABAD — FREE ENTRY — 70+ PARTICIPANTS — WE HEAL THE EARTH — SUSTAINABILITY IN ACTION';
 
+import { EVENTS_DATA } from '@/data/events';
+
 export default function EventsPage() {
     const [activeFilter, setActiveFilter] = useState('All Events');
     const confettiRef = useRef(null);
@@ -74,7 +76,7 @@ export default function EventsPage() {
         const toastTimer = setTimeout(() => {
             addToast({
                 title: 'Events Loaded!',
-                message: '1 upcoming event found — Run for Education on March 22',
+                message: `${EVENTS_DATA.length} upcoming events found across Education, Sustainability & Empowerment`,
                 type: 'success',
                 duration: 5000,
             });
@@ -154,9 +156,11 @@ export default function EventsPage() {
 
             {/* Events Grid */}
             <section className="events-section">
-                <p className="section-label">All Upcoming Events · 1 Result</p>
+                <p className="section-label">All Upcoming Events · {EVENTS_DATA.length} Results</p>
                 <div className="events-grid">
-                    <EventCard />
+                    {EVENTS_DATA.map((event, idx) => (
+                        <EventCard key={idx} {...event} />
+                    ))}
                 </div>
             </section>
         </>

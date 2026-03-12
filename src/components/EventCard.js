@@ -3,13 +3,24 @@
 import { useState } from 'react';
 import { Calendar, MapPin } from './Icons';
 
-export default function EventCard({ isPlaceholder = false, title = "Run for Education", category = "#Sustainability" }) {
+export default function EventCard({
+    title = "Run for Education",
+    category = "#Sustainability",
+    dateBadge = "22 MAR",
+    dateFull = "March 22, 2026",
+    location = "Hyderabad",
+    description = "An initiative by WE HEAL THE EARTH — run for a child's future, equal opportunities, and a better tomorrow.",
+    imageUrl = "https://skillbloomer.com/uploads/events/1770985327_698f176f3b880_featured.jpg",
+    externalLink = "https://skillbloomer.com/events/run-for-education",
+    statusBadge = "SOLD OUT",
+    isPlaceholder = false
+}) {
     const [imgError, setImgError] = useState(false);
 
     const handleRedirect = (e) => {
-        if (isPlaceholder) return;
+        if (isPlaceholder || !externalLink) return;
         e.stopPropagation();
-        window.open('https://skillbloomer.com/events/run-for-education', '_blank', 'noopener,noreferrer');
+        window.open(externalLink, '_blank', 'noopener,noreferrer');
     };
 
     return (
@@ -18,15 +29,15 @@ export default function EventCard({ isPlaceholder = false, title = "Run for Educ
             onClick={handleRedirect}
             tabIndex={0}
             role={isPlaceholder ? "article" : "button"}
-            aria-label={isPlaceholder ? "Upcoming event" : "View Run for Education event details"}
+            aria-label={isPlaceholder ? "Upcoming event" : `View ${title} event details`}
             onKeyDown={(e) => { if (e.key === 'Enter') handleRedirect(e); }}
             style={isPlaceholder ? { cursor: 'default' } : { cursor: 'pointer' }}
         >
             <div className="card-img-wrap">
                 {!imgError && !isPlaceholder ? (
                     <img
-                        src="https://skillbloomer.com/uploads/events/1770985327_698f176f3b880_featured.jpg"
-                        alt="Run for Education event"
+                        src={imageUrl}
+                        alt={`${title} event`}
                         loading="lazy"
                         onError={() => setImgError(true)}
                     />
@@ -38,7 +49,7 @@ export default function EventCard({ isPlaceholder = false, title = "Run for Educ
                     </div>
                 )}
                 <div className="card-img-overlay"></div>
-                {!isPlaceholder && <span className="card-date-badge">22 MAR</span>}
+                {!isPlaceholder && <span className="card-date-badge">{dateBadge}</span>}
                 {!isPlaceholder && <span className="card-cat-badge">{category}</span>}
             </div>
 
@@ -52,18 +63,18 @@ export default function EventCard({ isPlaceholder = false, title = "Run for Educ
                 <div className="card-meta">
                     <div className="meta-item">
                         <Calendar size={14} />
-                        <span>{isPlaceholder ? 'To Be Announced' : 'March 22, 2026'}</span>
+                        <span>{isPlaceholder ? 'To Be Announced' : dateFull}</span>
                     </div>
                     <div className="meta-item">
                         <MapPin size={14} />
-                        <span>{isPlaceholder ? 'TBA' : 'Hyderabad'}</span>
+                        <span>{isPlaceholder ? 'TBA' : location}</span>
                     </div>
                 </div>
 
                 <p className="card-desc">
                     {isPlaceholder
                         ? 'We are planning more exciting initiatives. Stay tuned as we finalize the details for our next impactful event.'
-                        : 'An initiative by WE HEAL THE EARTH — run for a child\'s future, equal opportunities, and a better tomorrow.'}
+                        : description}
                 </p>
 
                 <div className="card-divider"></div>
@@ -78,7 +89,7 @@ export default function EventCard({ isPlaceholder = false, title = "Run for Educ
                         </>
                     ) : (
                         <>
-                            <span className="sold-out-badge">SOLD OUT</span>
+                            <span className={`sold-out-badge ${statusBadge === 'REGISTER NOW' ? 'active-badge' : ''}`}>{statusBadge}</span>
                             <span className="view-details">
                                 View Details <span className="arrow">→</span>
                             </span>
