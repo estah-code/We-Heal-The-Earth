@@ -75,9 +75,9 @@ export default function HomePage() {
                             <Link href="/events" className="cta-btn primary">
                                 Explore Events
                             </Link>
-                            <Link href="/blog" className="cta-btn secondary">
+                            {/* <Link href="/blog" className="cta-btn secondary">
                                 Read Stories
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
@@ -198,8 +198,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* LATEST STORIES PREVIEW */}
-            <section className="home-latest-blogs">
+            {/* <section className="home-latest-blogs">
                 <div className="section-header center">
                     <p className="section-label">Field Notes</p>
                     <h2 className="section-title">
@@ -234,7 +233,7 @@ export default function HomePage() {
                         View All Historical Notes
                     </Link>
                 </div>
-            </section>
+            </section> */}
 
             {/* UPCOMING EVENTS STRIP */}
             <section className="events-strip">
