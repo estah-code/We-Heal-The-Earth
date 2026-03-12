@@ -28,9 +28,9 @@ export default function HomePage() {
         const fetchLatest = async () => {
             try {
                 // Fetch Blogs
-                const blogRes = await fetch("/api/blogs");
-                const blogData = await blogRes.json();
-                setLatestBlogs(Array.isArray(blogData) ? blogData.slice(0, 3) : []);
+                // const blogRes = await fetch("/api/blogs");
+                // const blogData = await blogRes.json();
+                // setLatestBlogs(Array.isArray(blogData) ? blogData.slice(0, 3) : []);
 
                 // Fetch Gallery
                 const galleryRes = await fetch("/api/gallery");
@@ -41,7 +41,7 @@ export default function HomePage() {
             } catch (err) {
                 console.error("Failed to fetch latest data", err);
             } finally {
-                setLoadingBlogs(false);
+                // setLoadingBlogs(false);
                 setLoadingGallery(false);
             }
         };

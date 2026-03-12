@@ -45,7 +45,7 @@ export default function Footer() {
                             <li><Link href="/about-us">About Us</Link></li>
                             <li><Link href="/events">Events</Link></li>
                             <li><Link href="/programs">Planet Earth</Link></li>
-                            <li><Link href="/blog">Blog</Link></li>
+                            {/* <li><Link href="/blog">Blog</Link></li> */}
                             <li><Link href="/gallery">Gallery</Link></li>
                             <li><Link href="/faq">FAQ</Link></li>
                             <li><a href="https://pages.razorpay.com/pl_HkMCyxeXURf9kK/view" target="_blank" rel="noopener noreferrer">Donate</a></li>
