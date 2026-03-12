@@ -1,34 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import HeroBackground from '@/components/HeroBackground';
 import { TreeLoader } from '@/components/TreeLoader';
+import blogsData from '@/data/blogs.json';
 
 export default function BlogPage() {
-    const [blogs, setBlogs] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [blogs] = useState(blogsData);
+    const [loading] = useState(false);
+    const [error] = useState(null);
 
     const [selectedPost, setSelectedPost] = useState(null);
     const [postLoading, setPostLoading] = useState(false);
-
-    useEffect(() => {
-        const fetchBlogs = async () => {
-            try {
-                const response = await fetch('/api/blogs');
-                if (!response.ok) throw new Error('Failed to load blogs');
-                const data = await response.json();
-                if (data.error) throw new Error(data.error);
-                setBlogs(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchBlogs();
-    }, []);
 
     const handleReadPost = async (url) => {
         setPostLoading(true);

@@ -1,32 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import HeroBackground from '@/components/HeroBackground';
 import { TreeLoader } from '@/components/TreeLoader';
+import programsData from '@/data/programs.json';
 
 export default function ProgramsPage() {
-    const [programs, setPrograms] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchPrograms = async () => {
-            try {
-                const response = await fetch('/api/programs');
-                if (!response.ok) throw new Error('Failed to fetch programs');
-                const data = await response.json();
-                if (data.error) throw new Error(data.error);
-                setPrograms(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchPrograms();
-    }, []);
+    const [programs] = useState(programsData);
+    const [loading] = useState(false);
+    const [error] = useState(null);
 
     if (loading) {
         return (

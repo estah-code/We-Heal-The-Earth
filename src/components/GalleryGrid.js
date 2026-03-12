@@ -1,30 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { TreeLoader } from './TreeLoader';
+import galleryData from '@/data/gallery.json';
 
 export default function GalleryGrid() {
-    const [images, setImages] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [images] = useState(galleryData);
+    const [loading] = useState(false);
+    const [error] = useState(null);
     const [filter, setFilter] = useState('All');
-
-    useEffect(() => {
-        const fetchImages = async () => {
-            try {
-                const response = await fetch('/api/gallery');
-                if (!response.ok) throw new Error('Failed to load gallery');
-                const data = await response.json();
-                setImages(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchImages();
-    }, []);
 
     const categories = ['All', ...new Set(images.map(img => img.category))];
 
