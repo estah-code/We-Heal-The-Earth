@@ -15,10 +15,12 @@ import HeroBackground from "@/components/HeroBackground";
 import PhotoSlider from "@/components/PhotoSlider";
 import EventCard from "@/components/EventCard";
 import { TreeLoader } from "@/components/TreeLoader";
+import { useTheme } from "@/context/ThemeContext";
 
 import { EVENTS_DATA } from "@/data/events";
 
 export default function HomePage() {
+    const { theme } = useTheme();
     const [latestBlogs, setLatestBlogs] = useState([]);
     const [loadingBlogs, setLoadingBlogs] = useState(true);
     const [galleryImages, setGalleryImages] = useState([]);
@@ -57,7 +59,7 @@ export default function HomePage() {
                 <div className="hero-content-split">
                     <div className="hero-left">
                         <img
-                            src="/logo.png"
+                            src={theme === 'ocean' ? '/logo-ocean.png' : '/logo-forest.png'}
                             alt="We Heal The Earth Logo"
                             className="hero-large-logo circular-logo"
                         />

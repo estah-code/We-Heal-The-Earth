@@ -198,10 +198,10 @@ img {
 }
 
 .circular-logo {
-  border-radius: 50% !important;
-  overflow: hidden !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
   background: transparent !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
 }
 
 .nav-links {

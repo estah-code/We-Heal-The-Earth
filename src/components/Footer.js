@@ -1,8 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { Globe, Instagram, Linkedin, Youtube, Facebook, MessageCircle, Mail, Phone, MapPin, ArrowUpRight } from './Icons';
+import { useTheme } from '../context/ThemeContext';
 
 export default function Footer() {
+    const { theme } = useTheme();
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -11,7 +13,7 @@ export default function Footer() {
                     <div className="footer-col brand-col">
                         <div className="footer-brand-logo">
                             <img 
-                                src="/logo.png" 
+                                src={theme === 'ocean' ? '/logo-ocean.png' : '/logo-forest.png'} 
                                 alt="We Heal The Earth Logo" 
                                 className="logo-img-footer circular-logo" 
                             />
