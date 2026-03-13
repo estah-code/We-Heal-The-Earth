@@ -42,7 +42,17 @@ const STATIC_GALLERY = [
     { "src": "/gallery/gallery_37.jpg", "category": "Events", "alt": "National Farmathon 2025 - Media Coverage" },
     { "src": "/gallery/gallery_38.jpg", "category": "Community", "alt": "National Farmathon 2025 - Local Artisans" },
     { "src": "/gallery/gallery_39.jpg", "category": "Action", "alt": "National Farmathon 2025 - Drone Sprinkler" },
-    { "src": "/gallery/gallery_40.jpg", "category": "Events", "alt": "National Farmathon 2025 - Grand Finale" }
+    { "src": "/gallery/gallery_40.jpg", "category": "Events", "alt": "National Farmathon 2025 - Grand Finale" },
+    { "src": "/gallery/gallery_41.jpg", "category": "Community", "alt": "National Farmathon 2025 - Farmer Training Session" },
+    { "src": "/gallery/gallery_42.jpg", "category": "Action", "alt": "National Farmathon 2025 - Live Soil Analysis" },
+    { "src": "/gallery/gallery_43.jpg", "category": "Events", "alt": "National Farmathon 2025 - Partners Meeting" },
+    { "src": "/gallery/gallery_44.jpg", "category": "Community", "alt": "National Farmathon 2025 - Rural Education Workshop" },
+    { "src": "/gallery/gallery_45.jpg", "category": "Action", "alt": "National Farmathon 2025 - Sustainable Irrigation Demo" },
+    { "src": "/gallery/gallery_46.jpg", "category": "Events", "alt": "National Farmathon 2025 - Opening Dinner" },
+    { "src": "/gallery/gallery_47.jpg", "category": "Community", "alt": "National Farmathon 2025 - Youth Leaders Forum" },
+    { "src": "/gallery/gallery_48.jpg", "category": "Action", "alt": "National Farmathon 2025 - Organic Harvest Celebration" },
+    { "src": "/gallery/gallery_49.jpg", "category": "Events", "alt": "National Farmathon 2025 - Media Briefing" },
+    { "src": "/gallery/gallery_50.jpg", "category": "Community", "alt": "National Farmathon 2025 - Empowering Local Farmers" }
 ];
 
 export async function GET() {
