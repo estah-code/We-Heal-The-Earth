@@ -1,13 +1,13 @@
 export const EVENTS_DATA = [
     {
         title: "Run for Education",
-        category: "#Sustainability",
+        category: "#Education",
         dateBadge: "22 MAR",
         dateFull: "March 22, 2026",
         location: "Gachibowli Stadium, Hyderabad",
-        description: "An initiative by WE HEAL THE EARTH — run for a child's future, equal opportunities, and a better tomorrow.",
+        description: "Join the Run for Education Society to train 40K students, create 40K jobs, and impact 4M lives across India.",
         imageUrl: "https://skillbloomer.com/uploads/events/1770985327_698f176f3b880_featured.jpg",
-        externalLink: "https://skillbloomer.com/events/run-for-education?from=instructor",
+        externalLink: "https://skillbloomer.com/events/run-for-education-society?from=instructor",
         statusBadge: "REGISTER NOW"
     },
     {
