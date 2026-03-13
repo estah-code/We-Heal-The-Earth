@@ -56,6 +56,11 @@ export default function HomePage() {
                 <HeroBackground />
                 <div className="hero-content-split">
                     <div className="hero-full-centered">
+                        <img
+                            src="/logo_transparent_v6.png"
+                            alt="We Heal The Earth Logo"
+                            className="hero-large-logo hero-brand-mark"
+                        />
                         <h1 className="hero-title">
                             Healing the Earth Through <em>Education</em> and <em>Action</em>
                         </h1>
