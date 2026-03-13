@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="footer-col brand-col">
                         <div className="footer-brand-logo">
                             <img 
-                                src="/logo_final_v1.png" 
+                                src="/logo_definitive_v5.png" 
                                 alt="We Heal The Earth Logo" 
                                 className="logo-img-footer" 
                             />
