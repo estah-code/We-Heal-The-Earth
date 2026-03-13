@@ -1,7 +1,42 @@
 [
   {
-    "src": "https://wehealtheearth.com/wp-content/uploads/2024/03/gallery1.jpg",
-    "category": "Events",
-    "alt": "Community"
+    "src": "/gallery/tree-planting.png",
+    "category": "Sustainability",
+    "alt": "Community Tree Planting Initiative"
+  },
+  {
+    "src": "/gallery/solar-panels.png",
+    "category": "Renewable Energy",
+    "alt": "Modern Solar Installation"
+  },
+  {
+    "src": "/gallery/education.png",
+    "category": "Education",
+    "alt": "Nature-based Learning Workshop"
+  },
+  {
+    "src": "/gallery/clean-ocean.png",
+    "category": "Conservation",
+    "alt": "Coastal Cleanup Program"
+  },
+  {
+    "src": "/gallery/community-garden.png",
+    "category": "Sustainability",
+    "alt": "Urban Community Garden Harvest"
+  },
+  {
+    "src": "/gallery/recycling-station.png",
+    "category": "Conservation",
+    "alt": "Modern Eco-friendly Recycling Station"
+  },
+  {
+    "src": "/gallery/wind-energy.png",
+    "category": "Renewable Energy",
+    "alt": "Wind Farm at Sunset"
+  },
+  {
+    "src": "/gallery/upcycling.png",
+    "category": "Education",
+    "alt": "Creative Upcycling Workshop"
   }
 ]

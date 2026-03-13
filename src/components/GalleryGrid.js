@@ -87,10 +87,14 @@ export default function GalleryGrid() {
                     {filteredImages.length > 0 ? (
                         filteredImages.map((img, i) => (
                             <div key={i} className="gallery-item">
-                                <img src={img.src} alt={img.alt} loading="lazy" />
-                                <div className="item-overlay">
-                                    <span className="item-cat">{img.category}</span>
-                                    <p className="item-title">{img.alt}</p>
+                                <div className="image-wrapper">
+                                    <img src={img.src} alt={img.alt} loading="lazy" />
+                                    <div className="item-overlay">
+                                        <div className="overlay-content">
+                                            <span className="item-cat">{img.category}</span>
+                                            <p className="item-title">{img.alt}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         ))
@@ -99,6 +103,145 @@ export default function GalleryGrid() {
                     )}
                 </div>
             </section>
+
+            <style jsx>{`
+                .gallery-filter-bar {
+                    display: flex;
+                    justify-content: center;
+                    gap: 12px;
+                    padding: 40px 20px;
+                    flex-wrap: wrap;
+                }
+                .filter-pill {
+                    padding: 10px 24px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    background: rgba(255, 255, 255, 0.05);
+                    color: var(--text);
+                    border-radius: 100px;
+                    font-family: var(--font-outfit);
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    backdrop-filter: blur(10px);
+                }
+                .filter-pill:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                    transform: translateY(-2px);
+                }
+                .filter-pill.active {
+                    background: var(--lime);
+                    color: var(--text-dark);
+                    border-color: var(--lime);
+                    font-weight: 700;
+                    box-shadow: 0 10px 20px rgba(193, 255, 114, 0.2);
+                }
+                
+                .gallery-section {
+                    padding: 0 5% 100px;
+                    max-width: 1600px;
+                    margin: 0 auto;
+                }
+                .gallery-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                    gap: 30px;
+                }
+                .gallery-item {
+                    border-radius: 24px;
+                    overflow: hidden;
+                    aspect-ratio: 1;
+                    position: relative;
+                    background: #1a1a1a;
+                    animation: cardAppear 0.6s ease-out backwards;
+                }
+                .gallery-item:nth-child(even) {
+                    animation-delay: 0.1s;
+                }
+                .gallery-item:nth-child(3n) {
+                    animation-delay: 0.2s;
+                }
+
+                .image-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .image-wrapper img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                .gallery-item:hover img {
+                    transform: scale(1.1);
+                }
+
+                .item-overlay {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 30px;
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                }
+                .gallery-item:hover .item-overlay {
+                    opacity: 1;
+                }
+
+                .overlay-content {
+                    transform: translateY(20px);
+                    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                .gallery-item:hover .overlay-content {
+                    transform: translateY(0);
+                }
+
+                .item-cat {
+                    font-family: var(--font-outfit);
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    color: var(--lime);
+                    margin-bottom: 8px;
+                    display: block;
+                }
+                .item-title {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    color: white;
+                }
+
+                .no-images {
+                    grid-column: 1 / -1;
+                    text-align: center;
+                    padding: 100px;
+                    font-size: 1.2rem;
+                    opacity: 0.5;
+                }
+
+                @keyframes cardAppear {
+                    from { opacity: 0; transform: translateY(30px) scale(0.95); }
+                    to { opacity: 1; transform: translateY(0) scale(1); }
+                }
+
+                @media (max-width: 768px) {
+                    .gallery-grid {
+                        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                        gap: 15px;
+                    }
+                    .gallery-filter-bar {
+                        padding: 30px 10px;
+                    }
+                    .item-title {
+                        font-size: 1rem;
+                    }
+                }
+            `}</style>
         </>
     );
 }
