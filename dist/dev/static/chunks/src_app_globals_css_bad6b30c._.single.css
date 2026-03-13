@@ -163,7 +163,8 @@ img {
   object-fit: contain !important;
   background: none !important;
   width: auto !important;
-  height: 60px !important;
+  max-width: none !important;
+  height: clamp(40px, 8vh, 64px) !important;
 }
 
 .nav-links {
