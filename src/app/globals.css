@@ -193,8 +193,9 @@ img {
 }
 
 .logo-img {
-  height: 60px !important;
+  height: clamp(40px, 8vh, 64px) !important;
   width: auto !important;
+  max-width: none !important;
   object-fit: contain !important;
   background: transparent !important;
   display: block;
