@@ -3,46 +3,14 @@ import { NextResponse } from 'next/server';
 export const dynamic = 'force-static';
 
 const STATIC_GALLERY = [
-    {
-        src: '/gallery/tree-planting.png',
-        category: 'Sustainability',
-        alt: 'Community Tree Planting Initiative'
-    },
-    {
-        src: '/gallery/solar-panels.png',
-        category: 'Renewable Energy',
-        alt: 'Modern Solar Installation'
-    },
-    {
-        src: '/gallery/education.png',
-        category: 'Education',
-        alt: 'Nature-based Learning Workshop'
-    },
-    {
-        src: '/gallery/clean-ocean.png',
-        category: 'Conservation',
-        alt: 'Coastal Cleanup Program'
-    },
-    {
-        src: '/gallery/community-garden.png',
-        category: 'Sustainability',
-        alt: 'Urban Community Garden Harvest'
-    },
-    {
-        src: '/gallery/recycling-station.png',
-        category: 'Conservation',
-        alt: 'Modern Eco-friendly Recycling Station'
-    },
-    {
-        src: '/gallery/wind-energy.png',
-        category: 'Renewable Energy',
-        alt: 'Wind Farm at Sunset'
-    },
-    {
-        src: '/gallery/upcycling.png',
-        category: 'Education',
-        alt: 'Creative Upcycling Workshop'
-    }
+    { "src": "/gallery/gallery_1.jpg", "category": "Events", "alt": "National Farmathon 2025 - Inauguration Ceremony" },
+    { "src": "/gallery/gallery_2.jpg", "category": "Events", "alt": "National Farmathon 2025 - Flag Off" },
+    { "src": "/gallery/gallery_3.jpg", "category": "Community", "alt": "National Farmathon 2025 - Farmer Interaction" },
+    { "src": "/gallery/gallery_4.jpg", "category": "Action", "alt": "National Farmathon 2025 - Field Demonstration" },
+    { "src": "/gallery/gallery_5.jpg", "category": "Events", "alt": "National Farmathon 2025 - Community Gathering" },
+    { "src": "/gallery/gallery_6.jpg", "category": "Action", "alt": "National Farmathon 2025 - Sustainable Farming" },
+    { "src": "/gallery/gallery_7.jpg", "category": "Community", "alt": "National Farmathon 2025 - Rural Impact" },
+    { "src": "/gallery/gallery_8.jpg", "category": "Events", "alt": "National Farmathon 2025 - Participant Registration" }
 ];
 
 export async function GET() {
