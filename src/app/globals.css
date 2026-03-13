@@ -193,17 +193,17 @@ img {
 }
 
 .logo-img {
-  height: 80px !important;
+  height: 90px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain !important;
   background: transparent !important;
   display: block;
-  filter: brightness(1.1) contrast(1.1);
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
 }
 
 .hero-large-logo {
-  height: clamp(180px, 30vh, 280px) !important;
+  height: clamp(350px, 55vh, 480px) !important;
   width: auto !important;
   object-fit: contain !important;
   display: block;
@@ -211,7 +211,7 @@ img {
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  filter: brightness(1.1) contrast(1.1);
+  filter: brightness(1.05) contrast(1.05) drop-shadow(0 0 25px rgba(46, 213, 115, 0.2));
 }
 
 
@@ -2684,14 +2684,6 @@ img {
   letter-spacing: -0.02em;
 }
 
-.logo-img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  border-radius: 6px;
-  background: white;
-  padding: 2px;
-}
 
 .logo-img-footer {
   width: auto;
