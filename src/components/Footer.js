@@ -10,7 +10,7 @@ export default function Footer() {
                     {/* Column 1: Brand & Socials */}
                     <div className="footer-col brand-col">
                         <div className="footer-brand-logo">
-                            <img src="/estah-logo.png" alt="Estah Logo" className="logo-img-footer" />
+                            <img src="/logo.png" alt="We Heal The Earth Logo" className="logo-img-footer" />
                             <span className="brand-text">WE HEAL THE EARTH</span>
                         </div>
                         <p className="footer-desc">
@@ -99,7 +99,7 @@ export default function Footer() {
                 <div className="footer-divider" />
 
                 <div className="footer-copyright-bar">
-                    <p>© {new Date().getFullYear()} Estah Society. All Rights Reserved.</p>
+                    <p>© {new Date().getFullYear()} We Heal The Earth. All Rights Reserved.</p>
                     <p className="powered-by">Education · Sustainability · Empowerment</p>
                 </div>
             </div>

@@ -57,8 +57,8 @@ export default function HomePage() {
                 <div className="hero-content-split">
                     <div className="hero-left">
                         <img
-                            src="/estah-logo-counsel.jpg"
-                            alt="Estah The Counsel Logo"
+                            src="/logo.png"
+                            alt="We Heal The Earth Logo"
                             className="hero-large-logo"
                         />
                     </div>
@@ -127,7 +127,7 @@ export default function HomePage() {
                             From <em>Awareness</em> to <em>Accountability</em>
                         </h2>
                         <p className="story-text">
-                            Estah Society’s "WE HEAL THE EARTH" initiative is more than just a
+                            We Heal The Earth's initiative is more than just a
                             campaign; it’s a commitment to the Future of India 2047. We bridge
                             the gap between environmental consciousness and tangible community
                             action.
