@@ -193,11 +193,20 @@ img {
 }
 
 .logo-img {
-  height: clamp(40px, 8vh, 64px) !important;
+  height: 64px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain !important;
   background: transparent !important;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.hero-large-logo {
+  height: clamp(120px, 20vh, 200px) !important;
+  width: auto !important;
+  object-fit: contain !important;
+  mix-blend-mode: multiply;
   display: block;
 }
 
