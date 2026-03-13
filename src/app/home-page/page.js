@@ -55,14 +55,7 @@ export default function HomePage() {
                 <PhotoSlider />
                 <HeroBackground />
                 <div className="hero-content-split">
-                    <div className="hero-left">
-                        <img
-                            src="/logo_transparent_v6.png"
-                            alt="We Heal The Earth Logo"
-                            className="hero-large-logo"
-                        />
-                    </div>
-                    <div className="hero-right">
+                    <div className="hero-full-centered">
                         <h1 className="hero-title">
                             Healing the Earth Through <em>Education</em> and <em>Action</em>
                         </h1>
@@ -75,9 +68,6 @@ export default function HomePage() {
                             <Link href="/events" className="cta-btn primary">
                                 Explore Events
                             </Link>
-                            {/* <Link href="/blog" className="cta-btn secondary">
-                                Read Stories
-                            </Link> */}
                         </div>
                     </div>
                 </div>
