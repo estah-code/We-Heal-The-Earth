@@ -193,9 +193,11 @@ img {
 }
 
 .logo-img {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
+  height: 60px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  display: block;
 }
 
 

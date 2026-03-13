@@ -619,9 +619,11 @@ img {
 }
 
 .logo-img {
-  object-fit: contain;
-  width: auto;
-  height: 48px;
+  display: block;
+  object-fit: contain !important;
+  background: none !important;
+  width: auto !important;
+  height: 60px !important;
 }
 
 .nav-links {
