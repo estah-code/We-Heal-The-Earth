@@ -193,7 +193,7 @@ img {
 }
 
 .logo-img {
-  height: 64px !important;
+  height: 80px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain !important;
@@ -203,7 +203,7 @@ img {
 }
 
 .hero-large-logo {
-  height: clamp(140px, 25vh, 220px) !important;
+  height: clamp(180px, 30vh, 280px) !important;
   width: auto !important;
   object-fit: contain !important;
   display: block;

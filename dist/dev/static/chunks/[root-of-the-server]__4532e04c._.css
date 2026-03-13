@@ -625,7 +625,7 @@ img {
   background: none !important;
   width: auto !important;
   max-width: none !important;
-  height: 64px !important;
+  height: 80px !important;
 }
 
 .hero-large-logo {
@@ -633,7 +633,7 @@ img {
   display: block;
   object-fit: contain !important;
   width: auto !important;
-  height: clamp(140px, 25vh, 220px) !important;
+  height: clamp(180px, 30vh, 280px) !important;
   box-shadow: none !important;
   background: none !important;
   border-radius: 0 !important;
