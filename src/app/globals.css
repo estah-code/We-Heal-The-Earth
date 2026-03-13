@@ -208,6 +208,10 @@ img {
   object-fit: contain !important;
   mix-blend-mode: multiply;
   display: block;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
 }
 
 
@@ -3545,7 +3549,4 @@ img {
     font-size: 0.9rem !important;
   }
 
-  .logo-img {
-    height: 28px !important;
-  }
 }
