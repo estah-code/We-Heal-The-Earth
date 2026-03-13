@@ -6,22 +6,42 @@ const STATIC_GALLERY = [
     {
         src: '/gallery/tree-planting.png',
         category: 'Sustainability',
-        alt: 'Diverse community members planting trees in a sunny field'
+        alt: 'Community Tree Planting Initiative'
     },
     {
         src: '/gallery/solar-panels.png',
         category: 'Renewable Energy',
-        alt: 'Modern solar panels on a community building roof'
+        alt: 'Modern Solar Installation'
     },
     {
         src: '/gallery/education.png',
         category: 'Education',
-        alt: 'Teacher showing children how to care for plants in nature'
+        alt: 'Nature-based Learning Workshop'
     },
     {
         src: '/gallery/clean-ocean.png',
         category: 'Conservation',
-        alt: 'Serene clean ocean beach with volunteers'
+        alt: 'Coastal Cleanup Program'
+    },
+    {
+        src: '/gallery/community-garden.png',
+        category: 'Sustainability',
+        alt: 'Urban Community Garden Harvest'
+    },
+    {
+        src: '/gallery/recycling-station.png',
+        category: 'Conservation',
+        alt: 'Modern Eco-friendly Recycling Station'
+    },
+    {
+        src: '/gallery/wind-energy.png',
+        category: 'Renewable Energy',
+        alt: 'Wind Farm at Sunset'
+    },
+    {
+        src: '/gallery/upcycling.png',
+        category: 'Education',
+        alt: 'Creative Upcycling Workshop'
     }
 ];
 

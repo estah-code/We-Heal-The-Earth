@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import * as cheerio from 'cheerio';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
     try {
         const response = await fetch('https://wehealtheearth.com/planet-run/', {
@@ -15,7 +17,6 @@ export async function GET() {
         const $ = cheerio.load(html);
         const programs = [];
 
-        // Use the specific selectors identified from the page structure
         $('.event-card').each((i, el) => {
             const container = $(el);
             const title = container.find('.event-title').text().trim();
@@ -37,7 +38,6 @@ export async function GET() {
             }
         });
 
-        // Deduplicate and filter
         const uniquePrograms = Array.from(new Set(programs.map(p => p.title)))
             .map(title => programs.find(p => p.title === title))
             .slice(0, 12);

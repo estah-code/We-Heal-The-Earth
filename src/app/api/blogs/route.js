@@ -1,13 +1,21 @@
 import { NextResponse } from 'next/server';
 import * as cheerio from 'cheerio';
 
+export const dynamic = 'force-static';
+
 export async function GET(request) {
-    const { searchParams } = new URL(request.url);
-    const targetUrl = searchParams.get('url');
+    let targetUrl = null;
+    try {
+        if (request && request.url) {
+            const { searchParams } = new URL(request.url);
+            targetUrl = searchParams.get('url');
+        }
+    } catch (e) {
+        // Handle build-time or invalid URL cases
+    }
 
     try {
         if (targetUrl) {
-            // FETCH FULL BLOG CONTENT
             const response = await fetch(targetUrl, {
                 next: { revalidate: 3600 },
                 headers: {
@@ -18,15 +26,11 @@ export async function GET(request) {
             if (!response.ok) throw new Error('Failed to fetch blog content');
             const html = await response.text();
             const $ = cheerio.load(html);
-
             const title = $('h1.entry-title').text().trim();
             const featuredImage = $('.post-thumbnail img').attr('src') || $('.elementor-image img').first().attr('src');
-
-            // Clean up the content: remove scripts, styles, and potentially problematic elements
             const contentObj = $('.entry-content.single-content');
             contentObj.find('script, style, ins, .sharedaddy, .wpcnt').remove();
 
-            // Rewrite internal links to avoid leaving our site if possible (or just keep as text)
             contentObj.find('a').each((i, el) => {
                 const href = $(el).attr('href');
                 if (href && !href.startsWith('http')) {
@@ -42,7 +46,6 @@ export async function GET(request) {
             });
         }
 
-        // FETCH BLOG LISTING
         const response = await fetch('https://wehealtheearth.com/blogs/', {
             next: { revalidate: 3600 },
             headers: {
@@ -60,8 +63,6 @@ export async function GET(request) {
             const link = $(el).find('.entry-title a').attr('href');
             const excerpt = $(el).find('.elementskit-post-body p').text().trim();
 
-            // Note: Listing page lacks featured images, but we could scrape them by fetching individual pages
-            // For now, we'll return a clean dataset and perhaps add a fallback pattern in the UI
             if (title && link) {
                 blogs.push({
                     title,
