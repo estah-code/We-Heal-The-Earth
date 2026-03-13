@@ -159,8 +159,9 @@ img {
 }
 
 .logo-img {
+  object-fit: contain;
   width: auto;
-  height: 32px;
+  height: 48px;
 }
 
 .nav-links {
