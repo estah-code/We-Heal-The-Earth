@@ -2,8 +2,8 @@ import ContactForm from '@/components/ContactForm';
 import HeroBackground from '@/components/HeroBackground';
 
 export const metadata = {
-    title: 'Contact — Events MVP',
-    description: 'Get in touch with Events MVP — partners, volunteers, and donors welcome.',
+    title: 'Contact — We Heal The Earth',
+    description: 'Get in touch with We Heal The Earth — partners, volunteers, and donors welcome.',
 };
 
 export default function ContactPage() {

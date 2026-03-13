@@ -280,18 +280,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThemeConte
 ;
 ;
 const metadata = {
-    title: 'Events MVP — Run for a Child\'s Future',
-    description: 'Events MVP empowers communities through education, entrepreneurship, and sustainability under the WE HEAL THE EARTH framework.',
+    title: 'We Heal The Earth — Run for a Child\'s Future',
+    description: 'We Heal The Earth empowers communities through education, entrepreneurship, and sustainability across India.',
     keywords: [
-        'Events MVP',
+        'We Heal The Earth',
         'education',
         'sustainability',
-        'WE HEAL THE EARTH',
         'non-profit',
         'India'
     ],
     openGraph: {
-        title: 'Events MVP — Run for a Child\'s Future',
+        title: 'We Heal The Earth — Run for a Child\'s Future',
         description: 'Empowering communities through education, entrepreneurship, and sustainability.',
         type: 'website'
     }

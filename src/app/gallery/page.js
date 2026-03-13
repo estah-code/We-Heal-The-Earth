@@ -2,7 +2,7 @@ import GalleryGrid from '@/components/GalleryGrid';
 import HeroBackground from '@/components/HeroBackground';
 
 export const metadata = {
-    title: 'Gallery — Events MVP',
+    title: 'Gallery — We Heal The Earth',
     description: 'A visual journey through our community events, scholarship exams, and impact projects across India.',
 };
 

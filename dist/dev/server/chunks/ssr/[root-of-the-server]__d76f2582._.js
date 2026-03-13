@@ -101,7 +101,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HeroBac
 ;
 ;
 const metadata = {
-    title: 'Gallery — Events MVP',
+    title: 'Gallery — We Heal The Earth',
     description: 'A visual journey through our community events, scholarship exams, and impact projects across India.'
 };
 function GalleryPage() {

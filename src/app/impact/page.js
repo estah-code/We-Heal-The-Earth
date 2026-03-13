@@ -2,7 +2,7 @@ import ImpactDashboard from '@/components/ImpactDashboard';
 import HeroBackground from '@/components/HeroBackground';
 
 export const metadata = {
-    title: 'Impact — Events MVP',
+    title: 'Impact — We Heal The Earth',
     description: 'Measuring what matters: Students impacted, fellowships awarded, and community transformation metrics.',
 };
 

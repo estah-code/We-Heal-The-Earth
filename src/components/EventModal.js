@@ -126,7 +126,7 @@ export default function EventModal({ isOpen, onClose }) {
                     <div className="modal-section">
                         <h3 className="modal-section-title">About This Event</h3>
                         <p>
-                            Run for Education is a heartfelt initiative by Events MVP to support
+                            Run for Education is a heartfelt initiative by We Heal The Earth to support
                             children&apos;s learning and spread awareness about the value of education.
                             This event brings together students, parents, teachers, and community members
                             to stand for one common purpose — ensuring every child gets the opportunity to

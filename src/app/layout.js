@@ -14,12 +14,12 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Events MVP — Run for a Child\'s Future',
+  title: 'We Heal The Earth — Run for a Child\'s Future',
   description:
-    'Events MVP empowers communities through education, entrepreneurship, and sustainability under the WE HEAL THE EARTH framework.',
-  keywords: ['Events MVP', 'education', 'sustainability', 'WE HEAL THE EARTH', 'non-profit', 'India'],
+    'We Heal The Earth empowers communities through education, entrepreneurship, and sustainability across India.',
+  keywords: ['We Heal The Earth', 'education', 'sustainability', 'non-profit', 'India'],
   openGraph: {
-    title: 'Events MVP — Run for a Child\'s Future',
+    title: 'We Heal The Earth — Run for a Child\'s Future',
     description:
       'Empowering communities through education, entrepreneurship, and sustainability.',
     type: 'website',
