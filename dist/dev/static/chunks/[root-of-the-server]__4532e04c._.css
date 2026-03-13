@@ -623,6 +623,13 @@ img {
   height: 32px;
 }
 
+.circular-logo {
+  object-fit: cover !important;
+  background: none !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
 .nav-links {
   align-items: center;
   gap: clamp(8px, 1.5vw, 28px);
