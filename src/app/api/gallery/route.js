@@ -22,7 +22,27 @@ const STATIC_GALLERY = [
     { "src": "/gallery/gallery_17.jpg", "category": "Community", "alt": "National Farmathon 2025 - Empowering Women" },
     { "src": "/gallery/gallery_18.jpg", "category": "Action", "alt": "National Farmathon 2025 - Digital Literacy" },
     { "src": "/gallery/gallery_19.jpg", "category": "Events", "alt": "National Farmathon 2025 - Press Interaction" },
-    { "src": "/gallery/gallery_20.jpg", "category": "Community", "alt": "National Farmathon 2025 - Youth Engagement" }
+    { "src": "/gallery/gallery_20.jpg", "category": "Community", "alt": "National Farmathon 2025 - Youth Engagement" },
+    { "src": "/gallery/gallery_21.jpg", "category": "Action", "alt": "National Farmathon 2025 - Soil Testing" },
+    { "src": "/gallery/gallery_22.jpg", "category": "Events", "alt": "National Farmathon 2025 - Panel Discussion" },
+    { "src": "/gallery/gallery_23.jpg", "category": "Community", "alt": "National Farmathon 2025 - Rural Leadership" },
+    { "src": "/gallery/gallery_24.jpg", "category": "Action", "alt": "National Farmathon 2025 - Organic Farming" },
+    { "src": "/gallery/gallery_25.jpg", "category": "Events", "alt": "National Farmathon 2025 - Exhibition Booths" },
+    { "src": "/gallery/gallery_26.jpg", "category": "Community", "alt": "National Farmathon 2025 - Village Outreach" },
+    { "src": "/gallery/gallery_27.jpg", "category": "Action", "alt": "National Farmathon 2025 - Irrigation Tech" },
+    { "src": "/gallery/gallery_28.jpg", "category": "Events", "alt": "National Farmathon 2025 - Success Stories" },
+    { "src": "/gallery/gallery_29.jpg", "category": "Community", "alt": "National Farmathon 2025 - Farmers' Market" },
+    { "src": "/gallery/gallery_30.jpg", "category": "Action", "alt": "National Farmathon 2025 - Crop Observation" },
+    { "src": "/gallery/gallery_31.jpg", "category": "Events", "alt": "National Farmathon 2025 - Networking Dinner" },
+    { "src": "/gallery/gallery_32.jpg", "category": "Community", "alt": "National Farmathon 2025 - Skill Development" },
+    { "src": "/gallery/gallery_33.jpg", "category": "Action", "alt": "National Farmathon 2025 - Bio-fertilizer Demo" },
+    { "src": "/gallery/gallery_34.jpg", "category": "Events", "alt": "National Farmathon 2025 - Closing Remarks" },
+    { "src": "/gallery/gallery_35.jpg", "category": "Community", "alt": "National Farmathon 2025 - Tribal Integration" },
+    { "src": "/gallery/gallery_36.jpg", "category": "Action", "alt": "National Farmathon 2025 - Machinery Expo" },
+    { "src": "/gallery/gallery_37.jpg", "category": "Events", "alt": "National Farmathon 2025 - Media Coverage" },
+    { "src": "/gallery/gallery_38.jpg", "category": "Community", "alt": "National Farmathon 2025 - Local Artisans" },
+    { "src": "/gallery/gallery_39.jpg", "category": "Action", "alt": "National Farmathon 2025 - Drone Sprinkler" },
+    { "src": "/gallery/gallery_40.jpg", "category": "Events", "alt": "National Farmathon 2025 - Grand Finale" }
 ];
 
 export async function GET() {

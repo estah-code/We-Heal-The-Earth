@@ -93,6 +93,66 @@ const STATIC_GALLERY = [
         "src": "/gallery/gallery_8.jpg",
         "category": "Events",
         "alt": "National Farmathon 2025 - Participant Registration"
+    },
+    {
+        "src": "/gallery/gallery_9.jpg",
+        "category": "Action",
+        "alt": "National Farmathon 2025 - Agricultural Innovation"
+    },
+    {
+        "src": "/gallery/gallery_10.jpg",
+        "category": "Events",
+        "alt": "National Farmathon 2025 - Keynote Session"
+    },
+    {
+        "src": "/gallery/gallery_11.jpg",
+        "category": "Community",
+        "alt": "National Farmathon 2025 - Farmer Workshop"
+    },
+    {
+        "src": "/gallery/gallery_12.jpg",
+        "category": "Action",
+        "alt": "National Farmathon 2025 - Modern Equipment"
+    },
+    {
+        "src": "/gallery/gallery_13.jpg",
+        "category": "Events",
+        "alt": "National Farmathon 2025 - Award Ceremony"
+    },
+    {
+        "src": "/gallery/gallery_14.jpg",
+        "category": "Community",
+        "alt": "National Farmathon 2025 - Knowledge Sharing"
+    },
+    {
+        "src": "/gallery/gallery_15.jpg",
+        "category": "Action",
+        "alt": "National Farmathon 2025 - Seed Distribution"
+    },
+    {
+        "src": "/gallery/gallery_16.jpg",
+        "category": "Events",
+        "alt": "National Farmathon 2025 - Cultural Program"
+    },
+    {
+        "src": "/gallery/gallery_17.jpg",
+        "category": "Community",
+        "alt": "National Farmathon 2025 - Empowering Women"
+    },
+    {
+        "src": "/gallery/gallery_18.jpg",
+        "category": "Action",
+        "alt": "National Farmathon 2025 - Digital Literacy"
+    },
+    {
+        "src": "/gallery/gallery_19.jpg",
+        "category": "Events",
+        "alt": "National Farmathon 2025 - Press Interaction"
+    },
+    {
+        "src": "/gallery/gallery_20.jpg",
+        "category": "Community",
+        "alt": "National Farmathon 2025 - Youth Engagement"
     }
 ];
 async function GET() {
