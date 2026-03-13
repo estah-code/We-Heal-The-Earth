@@ -10,19 +10,17 @@ const SCRAPE_HEADERS = {
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
 async function run() {
-    // Gallery
-    let gallery = [];
-    try {
-        const resp = await fetch('https://wehealtheearth.com/media/', { headers: SCRAPE_HEADERS });
-        if (resp.ok) {
-            const $ = cheerio.load(await resp.text());
-            $('.elementor-widget-image img').each((i, el) => {
-                const src = $(el).attr('src');
-                if (src && src.includes('wp-content/uploads')) gallery.push({ src, category: 'Media', alt: 'Eco Impact' });
-            });
-        }
-    } catch (e) {}
-    if (gallery.length === 0) gallery = [{ src: 'https://wehealtheearth.com/wp-content/uploads/2024/03/gallery1.jpg', category: 'Events', alt: 'Community' }];
+    // Gallery (National Farmathon 2025)
+    const gallery = [
+        { "src": "/gallery/gallery_1.jpg", "category": "Events", "alt": "National Farmathon 2025 - Inauguration Ceremony" },
+        { "src": "/gallery/gallery_2.jpg", "category": "Events", "alt": "National Farmathon 2025 - Flag Off" },
+        { "src": "/gallery/gallery_3.jpg", "category": "Community", "alt": "National Farmathon 2025 - Farmer Interaction" },
+        { "src": "/gallery/gallery_4.jpg", "category": "Action", "alt": "National Farmathon 2025 - Field Demonstration" },
+        { "src": "/gallery/gallery_5.jpg", "category": "Events", "alt": "National Farmathon 2025 - Community Gathering" },
+        { "src": "/gallery/gallery_6.jpg", "category": "Action", "alt": "National Farmathon 2025 - Sustainable Farming" },
+        { "src": "/gallery/gallery_7.jpg", "category": "Community", "alt": "National Farmathon 2025 - Rural Impact" },
+        { "src": "/gallery/gallery_8.jpg", "category": "Events", "alt": "National Farmathon 2025 - Participant Registration" }
+    ];
     fs.writeFileSync(path.join(DATA_DIR, 'gallery.json'), JSON.stringify(gallery, null, 2));
 
     // Blogs
