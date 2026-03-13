@@ -45,7 +45,7 @@ export default function Navbar() {
                 <div className="nav-container">
                     <Link href="/home-page" className="nav-logo">
                         <img 
-                            src="/logo_definitive_v5.png" 
+                            src="/logo_transparent_v6.png" 
                             alt="We Heal The Earth Logo" 
                             className="logo-img" 
                         />

@@ -57,7 +57,7 @@ export default function HomePage() {
                 <div className="hero-content-split">
                     <div className="hero-left">
                         <img
-                            src="/logo_definitive_v5.png"
+                            src="/logo_transparent_v6.png"
                             alt="We Heal The Earth Logo"
                             className="hero-large-logo"
                         />
