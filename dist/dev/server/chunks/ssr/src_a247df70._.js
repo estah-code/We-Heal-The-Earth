@@ -1100,7 +1100,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HeroBac
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotoSlider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/PhotoSlider.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$EventCard$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/EventCard.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$TreeLoader$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/TreeLoader.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThemeContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/ThemeContext.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$events$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/data/events.js [app-ssr] (ecmascript)");
 "use client";
 ;
@@ -1113,9 +1112,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$events$2e$js_
 ;
 ;
 ;
-;
 function HomePage() {
-    const { theme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThemeContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTheme"])();
     const [latestBlogs, setLatestBlogs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loadingBlogs, setLoadingBlogs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [galleryImages, setGalleryImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -1148,12 +1145,12 @@ function HomePage() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PhotoSlider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 57,
+                        lineNumber: 55,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$HeroBackground$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 58,
+                        lineNumber: 56,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1162,17 +1159,17 @@ function HomePage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-a22662bb4935650d" + " " + "hero-left",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: theme === 'ocean' ? '/logo-ocean.png' : '/logo-forest.png',
+                                    src: "/logo.png",
                                     alt: "We Heal The Earth Logo",
-                                    className: "jsx-a22662bb4935650d" + " " + "hero-large-logo circular-logo"
+                                    className: "jsx-a22662bb4935650d" + " " + "hero-large-logo"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 61,
+                                    lineNumber: 59,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 60,
+                                lineNumber: 58,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1187,7 +1184,7 @@ function HomePage() {
                                                 children: "Education"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 69,
+                                                lineNumber: 67,
                                                 columnNumber: 55
                                             }, this),
                                             " and ",
@@ -1196,13 +1193,13 @@ function HomePage() {
                                                 children: "Action"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 69,
+                                                lineNumber: 67,
                                                 columnNumber: 78
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 68,
+                                        lineNumber: 66,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1210,7 +1207,7 @@ function HomePage() {
                                         children: "We are a sustainability-driven initiative creating lasting impact through regenerative education and community transformation. Join the movement."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 71,
+                                        lineNumber: 69,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1221,24 +1218,24 @@ function HomePage() {
                                             children: "Explore Events"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 77,
+                                            lineNumber: 75,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 76,
+                                        lineNumber: 74,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 67,
+                                lineNumber: 65,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 59,
+                        lineNumber: 57,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1248,26 +1245,26 @@ function HomePage() {
                                 className: "jsx-a22662bb4935650d" + " " + "blob blob-1"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 88,
+                                lineNumber: 86,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-a22662bb4935650d" + " " + "blob blob-2"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 89,
+                                lineNumber: 87,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 87,
+                        lineNumber: 85,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 56,
+                lineNumber: 54,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1282,12 +1279,28 @@ function HomePage() {
                                 children: "50+ GLOBAL PARTNERS"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 97,
+                                lineNumber: 95,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "jsx-a22662bb4935650d",
                                 children: "COLLABORATING FOR IMPACT"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/home-page/page.js",
+                                lineNumber: 96,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "jsx-a22662bb4935650d",
+                                children: "EMPOWERING COMMUNITIES"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/home-page/page.js",
+                                lineNumber: 97,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "jsx-a22662bb4935650d",
+                                children: "DRIVING SUSTAINABLE CHANGE"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
                                 lineNumber: 98,
@@ -1295,7 +1308,7 @@ function HomePage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "jsx-a22662bb4935650d",
-                                children: "EMPOWERING COMMUNITIES"
+                                children: "50+ GLOBAL PARTNERS"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
                                 lineNumber: 99,
@@ -1303,7 +1316,7 @@ function HomePage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "jsx-a22662bb4935650d",
-                                children: "DRIVING SUSTAINABLE CHANGE"
+                                children: "COLLABORATING FOR IMPACT"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
                                 lineNumber: 100,
@@ -1311,7 +1324,7 @@ function HomePage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "jsx-a22662bb4935650d",
-                                children: "50+ GLOBAL PARTNERS"
+                                children: "EMPOWERING COMMUNITIES"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
                                 lineNumber: 101,
@@ -1319,42 +1332,26 @@ function HomePage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "jsx-a22662bb4935650d",
-                                children: "COLLABORATING FOR IMPACT"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 102,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "jsx-a22662bb4935650d",
-                                children: "EMPOWERING COMMUNITIES"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 103,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "jsx-a22662bb4935650d",
                                 children: "DRIVING SUSTAINABLE CHANGE"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 104,
+                                lineNumber: 102,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 96,
+                        lineNumber: 94,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 95,
+                    lineNumber: 93,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 94,
+                lineNumber: 92,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1371,7 +1368,7 @@ function HomePage() {
                                     className: "jsx-a22662bb4935650d" + " " + "story-main-img"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 113,
+                                    lineNumber: 111,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1382,7 +1379,7 @@ function HomePage() {
                                             children: "01"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 119,
+                                            lineNumber: 117,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1390,19 +1387,19 @@ function HomePage() {
                                             children: "Our commitment to regenerative growth starts at the grassroots level."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 120,
+                                            lineNumber: 118,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 118,
+                                    lineNumber: 116,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 112,
+                            lineNumber: 110,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1413,7 +1410,7 @@ function HomePage() {
                                     children: "Our Story"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 127,
+                                    lineNumber: 125,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1425,7 +1422,7 @@ function HomePage() {
                                             children: "Awareness"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 129,
+                                            lineNumber: 127,
                                             columnNumber: 34
                                         }, this),
                                         " to ",
@@ -1434,13 +1431,13 @@ function HomePage() {
                                             children: "Accountability"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 129,
+                                            lineNumber: 127,
                                             columnNumber: 56
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 128,
+                                    lineNumber: 126,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1448,7 +1445,7 @@ function HomePage() {
                                     children: "We Heal The Earth's initiative is more than just a campaign; it’s a commitment to the Future of India 2047. We bridge the gap between environmental consciousness and tangible community action."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 131,
+                                    lineNumber: 129,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1462,7 +1459,7 @@ function HomePage() {
                                                     children: "Regenerative Mindsets"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 139,
+                                                    lineNumber: 137,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1470,13 +1467,13 @@ function HomePage() {
                                                     children: "Teaching communities not just to sustain, but to actively heal their local ecosystems."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 140,
+                                                    lineNumber: 138,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 138,
+                                            lineNumber: 136,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1487,7 +1484,7 @@ function HomePage() {
                                                     children: "Systemic Change"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 146,
+                                                    lineNumber: 144,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1495,19 +1492,19 @@ function HomePage() {
                                                     children: "Working with institutional partners to scale sustainable practices across the nation."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 147,
+                                                    lineNumber: 145,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 145,
+                                            lineNumber: 143,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 137,
+                                    lineNumber: 135,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1519,30 +1516,30 @@ function HomePage() {
                                             size: 18
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 154,
+                                            lineNumber: 152,
                                             columnNumber: 50
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 153,
+                                    lineNumber: 151,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 126,
+                            lineNumber: 124,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 111,
+                    lineNumber: 109,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 110,
+                lineNumber: 108,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1556,7 +1553,7 @@ function HomePage() {
                                 children: "Our Philosophy"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 163,
+                                lineNumber: 161,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1568,19 +1565,19 @@ function HomePage() {
                                         children: "India 2047"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 165,
+                                        lineNumber: 163,
                                         columnNumber: 38
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 164,
+                                lineNumber: 162,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 162,
+                        lineNumber: 160,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1595,12 +1592,12 @@ function HomePage() {
                                             size: 32
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 172,
+                                            lineNumber: 170,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 171,
+                                        lineNumber: 169,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1608,7 +1605,7 @@ function HomePage() {
                                         children: "Sustainability"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 174,
+                                        lineNumber: 172,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1616,13 +1613,13 @@ function HomePage() {
                                         children: "Healing the earth through conscious living and regenerative educational frameworks."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 175,
+                                        lineNumber: 173,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 170,
+                                lineNumber: 168,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1634,12 +1631,12 @@ function HomePage() {
                                             size: 32
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 182,
+                                            lineNumber: 180,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 181,
+                                        lineNumber: 179,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1647,7 +1644,7 @@ function HomePage() {
                                         children: "Education"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 184,
+                                        lineNumber: 182,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1655,13 +1652,13 @@ function HomePage() {
                                         children: "Bridging the gap with scholarship exams and fellowships for every aspiring mind."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 185,
+                                        lineNumber: 183,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 180,
+                                lineNumber: 178,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1673,12 +1670,12 @@ function HomePage() {
                                             size: 32
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 192,
+                                            lineNumber: 190,
                                             columnNumber: 29
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 191,
+                                        lineNumber: 189,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1686,7 +1683,7 @@ function HomePage() {
                                         children: "Empowerment"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 194,
+                                        lineNumber: 192,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1694,25 +1691,25 @@ function HomePage() {
                                         children: "Providing the tools and networks for individual and community transformation."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 195,
+                                        lineNumber: 193,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 190,
+                                lineNumber: 188,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 169,
+                        lineNumber: 167,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 161,
+                lineNumber: 159,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1731,7 +1728,7 @@ function HomePage() {
                                             children: "Join Us"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 245,
+                                            lineNumber: 243,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1743,19 +1740,19 @@ function HomePage() {
                                                     children: "Events"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 247,
+                                                    lineNumber: 245,
                                                     columnNumber: 42
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 246,
+                                            lineNumber: 244,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 244,
+                                    lineNumber: 242,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1767,19 +1764,19 @@ function HomePage() {
                                             size: 18
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 251,
+                                            lineNumber: 249,
                                             columnNumber: 45
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 250,
+                                    lineNumber: 248,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 243,
+                            lineNumber: 241,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1788,23 +1785,23 @@ function HomePage() {
                                     ...event
                                 }, idx, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 256,
+                                    lineNumber: 254,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 254,
+                            lineNumber: 252,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 242,
+                    lineNumber: 240,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 241,
+                lineNumber: 239,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1823,7 +1820,7 @@ function HomePage() {
                                             children: "Gallery"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 267,
+                                            lineNumber: 265,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1835,19 +1832,19 @@ function HomePage() {
                                                     children: "in Action"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 269,
+                                                    lineNumber: 267,
                                                     columnNumber: 41
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 268,
+                                            lineNumber: 266,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 266,
+                                    lineNumber: 264,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1859,19 +1856,19 @@ function HomePage() {
                                             size: 18
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 273,
+                                            lineNumber: 271,
                                             columnNumber: 44
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 272,
+                                    lineNumber: 270,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 265,
+                            lineNumber: 263,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1882,12 +1879,12 @@ function HomePage() {
                                     size: 40
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 279,
+                                    lineNumber: 277,
                                     columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 278,
+                                lineNumber: 276,
                                 columnNumber: 29
                             }, this) : galleryImages.map((img, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "jsx-a22662bb4935650d" + " " + "photo-item",
@@ -1899,7 +1896,7 @@ function HomePage() {
                                             className: "jsx-a22662bb4935650d"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 284,
+                                            lineNumber: 282,
                                             columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1909,34 +1906,34 @@ function HomePage() {
                                                 children: img.category
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 286,
+                                                lineNumber: 284,
                                                 columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 285,
+                                            lineNumber: 283,
                                             columnNumber: 37
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 283,
+                                    lineNumber: 281,
                                     columnNumber: 33
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 276,
+                            lineNumber: 274,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 264,
+                    lineNumber: 262,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 263,
+                lineNumber: 261,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1952,7 +1949,7 @@ function HomePage() {
                                     children: "Impact Framework"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 299,
+                                    lineNumber: 297,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1964,13 +1961,13 @@ function HomePage() {
                                             children: "Education Model"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 301,
+                                            lineNumber: 299,
                                             columnNumber: 46
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 300,
+                                    lineNumber: 298,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1978,7 +1975,7 @@ function HomePage() {
                                     children: "We don't just teach; we transform. Our ecosystem is built on three pillars that ensure sustainable development from classroom to community."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 303,
+                                    lineNumber: 301,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1993,12 +1990,12 @@ function HomePage() {
                                                         size: 24
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/home-page/page.js",
-                                                        lineNumber: 311,
+                                                        lineNumber: 309,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 310,
+                                                    lineNumber: 308,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2009,7 +2006,7 @@ function HomePage() {
                                                             children: "Dynamic Curriculum"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/home-page/page.js",
-                                                            lineNumber: 314,
+                                                            lineNumber: 312,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2017,19 +2014,19 @@ function HomePage() {
                                                             children: "Scholarship exams and fellowships designed for modern environmental challenges."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/home-page/page.js",
-                                                            lineNumber: 315,
+                                                            lineNumber: 313,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 313,
+                                                    lineNumber: 311,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 309,
+                                            lineNumber: 307,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2041,12 +2038,12 @@ function HomePage() {
                                                         size: 24
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/home-page/page.js",
-                                                        lineNumber: 323,
+                                                        lineNumber: 321,
                                                         columnNumber: 37
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 322,
+                                                    lineNumber: 320,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2057,7 +2054,7 @@ function HomePage() {
                                                             children: "Rooted Action"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/home-page/page.js",
-                                                            lineNumber: 326,
+                                                            lineNumber: 324,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2065,31 +2062,31 @@ function HomePage() {
                                                             children: "Grassroots community projects that put regenerative theory into practice."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/home-page/page.js",
-                                                            lineNumber: 327,
+                                                            lineNumber: 325,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/home-page/page.js",
-                                                    lineNumber: 325,
+                                                    lineNumber: 323,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 321,
+                                            lineNumber: 319,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 308,
+                                    lineNumber: 306,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 298,
+                            lineNumber: 296,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2099,7 +2096,7 @@ function HomePage() {
                                     className: "jsx-a22662bb4935650d" + " " + "visual-orb"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 336,
+                                    lineNumber: 334,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2108,24 +2105,24 @@ function HomePage() {
                                     className: "jsx-a22662bb4935650d"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 337,
+                                    lineNumber: 335,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 335,
+                            lineNumber: 333,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 297,
+                    lineNumber: 295,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 296,
+                lineNumber: 294,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2139,7 +2136,7 @@ function HomePage() {
                                 children: "Scale through Collaboration"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 345,
+                                lineNumber: 343,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2151,19 +2148,19 @@ function HomePage() {
                                         children: "Pathways"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 347,
+                                        lineNumber: 345,
                                         columnNumber: 39
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 346,
+                                lineNumber: 344,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 344,
+                        lineNumber: 342,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2180,20 +2177,20 @@ function HomePage() {
                                                 children: "01"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 353,
+                                                lineNumber: 351,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Icons$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GraduationCap"], {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 354,
+                                                lineNumber: 352,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 352,
+                                        lineNumber: 350,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2201,7 +2198,7 @@ function HomePage() {
                                         children: "Academic Alliances"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 356,
+                                        lineNumber: 354,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2209,13 +2206,13 @@ function HomePage() {
                                         children: "Partnering with universities to integrate sustainability into mainstream higher education."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 357,
+                                        lineNumber: 355,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 351,
+                                lineNumber: 349,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2229,20 +2226,20 @@ function HomePage() {
                                                 children: "02"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 364,
+                                                lineNumber: 362,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Icons$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 365,
+                                                lineNumber: 363,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 363,
+                                        lineNumber: 361,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2250,7 +2247,7 @@ function HomePage() {
                                         children: "Corporate Synergy"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 367,
+                                        lineNumber: 365,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2258,13 +2255,13 @@ function HomePage() {
                                         children: "Driving CSR initiatives that create measurable environmental and social ROI."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 368,
+                                        lineNumber: 366,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 362,
+                                lineNumber: 360,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2278,20 +2275,20 @@ function HomePage() {
                                                 children: "03"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 375,
+                                                lineNumber: 373,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Icons$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Zap"], {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/home-page/page.js",
-                                                lineNumber: 376,
+                                                lineNumber: 374,
                                                 columnNumber: 29
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 374,
+                                        lineNumber: 372,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2299,7 +2296,7 @@ function HomePage() {
                                         children: "Government Policy"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 378,
+                                        lineNumber: 376,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2307,25 +2304,25 @@ function HomePage() {
                                         children: "Advising on educational frameworks that align with India 2047 sustainability goals."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 379,
+                                        lineNumber: 377,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 373,
+                                lineNumber: 371,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 350,
+                        lineNumber: 348,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 343,
+                lineNumber: 341,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2345,13 +2342,13 @@ function HomePage() {
                                             children: "Together"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/home-page/page.js",
-                                            lineNumber: 393,
+                                            lineNumber: 391,
                                             columnNumber: 45
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 392,
+                                    lineNumber: 390,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2359,13 +2356,13 @@ function HomePage() {
                                     children: "We're grateful to collaborate with organizations that share our vision of environmental restoration and community empowerment. Together, we're creating lasting positive impact."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 395,
+                                    lineNumber: 393,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 390,
+                            lineNumber: 388,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2379,12 +2376,12 @@ function HomePage() {
                                         className: "jsx-a22662bb4935650d"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 403,
+                                        lineNumber: 401,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 402,
+                                    lineNumber: 400,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2395,12 +2392,12 @@ function HomePage() {
                                         className: "jsx-a22662bb4935650d"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 406,
+                                        lineNumber: 404,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 405,
+                                    lineNumber: 403,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2411,12 +2408,12 @@ function HomePage() {
                                         className: "jsx-a22662bb4935650d"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 409,
+                                        lineNumber: 407,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 408,
+                                    lineNumber: 406,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2427,12 +2424,12 @@ function HomePage() {
                                         className: "jsx-a22662bb4935650d"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 412,
+                                        lineNumber: 410,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 411,
+                                    lineNumber: 409,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2443,12 +2440,12 @@ function HomePage() {
                                         className: "jsx-a22662bb4935650d"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 415,
+                                        lineNumber: 413,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 414,
+                                    lineNumber: 412,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2459,29 +2456,29 @@ function HomePage() {
                                         className: "jsx-a22662bb4935650d"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 418,
+                                        lineNumber: 416,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 417,
+                                    lineNumber: 415,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/home-page/page.js",
-                            lineNumber: 401,
+                            lineNumber: 399,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 389,
+                    lineNumber: 387,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 388,
+                lineNumber: 386,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2500,13 +2497,13 @@ function HomePage() {
                                         children: "Heal the Earth?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/home-page/page.js",
-                                        lineNumber: 429,
+                                        lineNumber: 427,
                                         columnNumber: 38
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 428,
+                                lineNumber: 426,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2514,7 +2511,7 @@ function HomePage() {
                                 children: "Join thousands of students, educators, and leaders in building a regenerative future."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 431,
+                                lineNumber: 429,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2527,28 +2524,28 @@ function HomePage() {
                                     children: "Support the Cause"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/home-page/page.js",
-                                    lineNumber: 436,
+                                    lineNumber: 434,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/home-page/page.js",
-                                lineNumber: 435,
+                                lineNumber: 433,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/home-page/page.js",
-                        lineNumber: 427,
+                        lineNumber: 425,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/home-page/page.js",
-                    lineNumber: 426,
+                    lineNumber: 424,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/home-page/page.js",
-                lineNumber: 425,
+                lineNumber: 423,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2558,7 +2555,7 @@ function HomePage() {
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/home-page/page.js",
-        lineNumber: 54,
+        lineNumber: 52,
         columnNumber: 9
     }, this);
 }

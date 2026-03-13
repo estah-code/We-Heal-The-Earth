@@ -197,12 +197,6 @@ img {
   width: auto;
 }
 
-.circular-logo {
-  border-radius: 0 !important;
-  overflow: visible !important;
-  background: transparent !important;
-  object-fit: contain !important;
-}
 
 .nav-links {
   display: flex;
