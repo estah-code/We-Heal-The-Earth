@@ -1,8 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { Globe, Instagram, Linkedin, Youtube, Facebook, MessageCircle, Mail, Phone, MapPin, ArrowUpRight } from './Icons';
+import { useTheme } from '../context/ThemeContext';
 
 export default function Footer() {
+    const { theme } = useTheme();
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -10,7 +12,11 @@ export default function Footer() {
                     {/* Column 1: Brand & Socials */}
                     <div className="footer-col brand-col">
                         <div className="footer-brand-logo">
-                            <img src="/logo.png" alt="We Heal The Earth Logo" className="logo-img-footer" />
+                            <img 
+                                src={theme === 'ocean' ? '/logo-ocean.png' : '/logo-forest.png'} 
+                                alt="We Heal The Earth Logo" 
+                                className="logo-img-footer" 
+                            />
                             <span className="brand-text">WE HEAL THE EARTH</span>
                         </div>
                         <p className="footer-desc">

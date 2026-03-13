@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useCallback } from 'react';
 import { Globe } from './Icons';
 import ThemeSwitcher from './ThemeSwitcher';
+import { useTheme } from '../context/ThemeContext';
 
 const navItems = [
     { name: 'Home', path: '/home-page', soon: false },
@@ -19,6 +20,7 @@ const navItems = [
 
 export default function Navbar() {
     const pathname = usePathname();
+    const { theme } = useTheme();
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const toggleMobile = useCallback(() => {
@@ -44,7 +46,11 @@ export default function Navbar() {
             <nav className="nav" role="navigation" aria-label="Main navigation">
                 <div className="nav-container">
                     <Link href="/home-page" className="nav-logo">
-                        <img src="/logo.png" alt="We Heal The Earth Logo" className="logo-img" />
+                        <img 
+                            src={theme === 'ocean' ? '/logo-ocean.png' : '/logo-forest.png'} 
+                            alt="We Heal The Earth Logo" 
+                            className="logo-img" 
+                        />
                         WE HEAL THE EARTH
                     </Link>
 
