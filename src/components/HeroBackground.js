@@ -160,14 +160,24 @@ export default function HeroBackground({ variant = 'default' }) {
 
     return (
         <div className="hero-bg-layers" aria-hidden="true">
+            {/* Cinematic video layer */}
+            <div className="hero-video-wrapper">
+                <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className="hero-video-bg"
+                >
+                    <source src="https://player.vimeo.com/external/370331493.sd.mp4?s=7b23158b1914ebc47a39d8995aeb74045f95f4e1&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+                </video>
+            </div>
+
             {/* Canvas particle layer */}
             <canvas ref={canvasRef} className="hero-particles-canvas" />
 
             {/* Animated gradient mesh */}
             <div className="hero-gradient-mesh" />
-
-            {/* Earth image with glow */}
-            <div className="hero-earth-image" />
 
             {/* Secondary soft orb */}
             <div className="hero-glow-orb hero-glow-orb-1" />
