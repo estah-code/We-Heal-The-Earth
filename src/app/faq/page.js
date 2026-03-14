@@ -23,7 +23,7 @@ const faqData = [
     },
     {
         question: "How can I volunteer for the mission?",
-        answer: "We are always looking for passionate individuals to join our cause. You can reach out to us via email at estahsociety@gmail.com or call us at +91 9008499555 to discuss volunteer opportunities."
+        answer: "We are always looking for passionate individuals to join our cause. You can reach out to us via email at hello@estah.org or call us at +91 9008499555 to discuss volunteer opportunities."
     }
 ];
 
@@ -77,8 +77,8 @@ export default function FAQPage() {
                     <h2>Still have questions?</h2>
                     <p>We're here to help. Reach out to our team directly.</p>
                     <div className="contact-methods">
-                        <a href="mailto:estahsociety@gmail.com" className="contact-link">
-                            <Mail size={18} /> estahsociety@gmail.com
+                        <a href="mailto:hello@estah.org" className="contact-link">
+                            <Mail size={18} /> hello@estah.org
                         </a>
                         <a href="tel:+919008499555" className="contact-link">
                             <Phone size={18} /> +91 90084 99555
