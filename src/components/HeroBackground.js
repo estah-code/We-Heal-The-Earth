@@ -169,7 +169,7 @@ export default function HeroBackground({ variant = 'default' }) {
                     playsInline 
                     className="hero-video-bg"
                 >
-                    <source src="https://player.vimeo.com/external/370331493.sd.mp4?s=7b23158b1914ebc47a39d8995aeb74045f95f4e1&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+                    <source src="/hero-bg-video.mp4" type="video/mp4" />
                 </video>
             </div>
 
