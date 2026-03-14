@@ -177,7 +177,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: clamp(16px, 2vw, 40px);
-  padding: 0 clamp(16px, 3vw, 40px) 0 0;
+  padding: 0 clamp(16px, 3vw, 40px) 0 clamp(8px, 2vw, 24px);
 }
 
 .nav-logo {
@@ -200,6 +200,21 @@ img {
   background: transparent !important;
   display: block;
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
+  transition: height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 48px !important;
+  }
+  .nav-logo {
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  .nav-container {
+    padding: 0 16px 0 10px;
+    gap: 8px;
+  }
 }
 
 .hero-full-centered {
