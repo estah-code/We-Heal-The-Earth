@@ -55,7 +55,7 @@ function fireConfetti(canvas) {
     requestAnimationFrame(draw);
 }
 
-const tickerText = 'RUN FOR EDUCATION — 22 MARCH 2026 — GACHIBOWLI STADIUM, HYDERABAD — FREE ENTRY — 70+ PARTICIPANTS — WE HEAL THE EARTH — SUSTAINABILITY IN ACTION';
+const tickerText = 'RUN FOR EDUCATION: EMPOWERING 40K STUDENTS — RUN FOR LIVELIHOOD: INSPIRING SUSTAINABLE FUTURES — WOMEN ON RUN: STRENGTH & SELF-CONFIDENCE — RUN FOR WATER: HEALING COMMUNITIES THROUGH CONSERVATION — 22 MARCH 2026 — GACHIBOWLI STADIUM, HYDERABAD — WE HEAL THE EARTH';
 
 import { EVENTS_DATA } from '@/data/events';
 
@@ -64,7 +64,12 @@ export default function EventsPage() {
     const confettiRef = useRef(null);
     const { addToast } = useToast();
 
-    const filters = ['All Events', 'This Month', 'Sustainability', 'Education', 'Free Events'];
+    const filters = ['All Events', 'Education', 'Sustainability', 'Empowerment', 'Livelihood'];
+
+    const filteredEvents = EVENTS_DATA.filter((event) => {
+        if (activeFilter === 'All Events') return true;
+        return event.category.toLowerCase().includes(activeFilter.toLowerCase());
+    });
 
     useEffect(() => {
         // Fire confetti on load
@@ -158,7 +163,7 @@ export default function EventsPage() {
             <section className="events-section">
                 <p className="section-label">All Upcoming Events · {EVENTS_DATA.length} Results</p>
                 <div className="events-grid">
-                    {EVENTS_DATA.map((event, idx) => (
+                    {filteredEvents.map((event, idx) => (
                         <EventCard key={idx} {...event} />
                     ))}
                 </div>
