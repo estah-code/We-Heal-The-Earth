@@ -177,7 +177,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: clamp(16px, 2vw, 40px);
-  padding: 0 clamp(16px, 3vw, 40px);
+  padding: 0 clamp(16px, 3vw, 40px) 0 0;
 }
 
 .nav-logo {
