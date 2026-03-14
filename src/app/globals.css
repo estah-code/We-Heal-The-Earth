@@ -229,7 +229,11 @@ img {
 }
 
 .hero-large-logo {
-  display: none !important;
+  display: block !important;
+  max-width: clamp(200px, 15vw, 300px) !important;
+  height: auto !important;
+  margin-bottom: 24px !important;
+  filter: drop-shadow(0 0 20px rgba(184, 240, 62, 0.2));
 }
 
 .hero-title {
@@ -515,13 +519,13 @@ img {
 
 .hero-earth-image {
   position: absolute;
-  right: 50%;
+  left: 50%;
   top: 50%;
-  transform: translate(50%, -50%);
-  width: min(800px, 90vw);
-  height: min(800px, 90vh);
+  transform: translate(-50%, -50%);
+  width: min(700px, 85vw);
+  height: min(700px, 85vh);
   background: url('/earth-illustration.png') center / contain no-repeat;
-  opacity: 0.15;
+  opacity: 0.18;
   filter: saturate(1.2) contrast(1.1) brightness(1.1);
   z-index: 2;
   animation: earthBreath 12s ease-in-out infinite;
@@ -530,13 +534,13 @@ img {
 
 @keyframes earthBreath {
   0%, 100% {
-    transform: translate(50%, -50%) scale(1) rotate(0deg);
-    opacity: 0.15;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 0.18;
     filter: saturate(1.2) contrast(1.1) brightness(1.1) blur(0px);
   }
   50% {
-    transform: translate(50%, -50%) scale(1.08) rotate(2deg);
-    opacity: 0.22;
+    transform: translate(-50%, -50%) scale(1.05) rotate(2deg);
+    opacity: 0.25;
     filter: saturate(1.4) contrast(1.2) brightness(1.2) blur(1px);
   }
 }
