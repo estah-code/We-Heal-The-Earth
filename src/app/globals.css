@@ -857,34 +857,36 @@ img {
   pointer-events: none;
 }
 
+.card-badges-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
 .card-date-badge {
-  position: absolute;
-  bottom: 14px;
-  left: 14px;
   background: var(--yellow);
   color: var(--text-dark);
-  padding: 6px 16px;
-  border-radius: 8px;
+  padding: 4px 12px;
+  border-radius: 6px;
   font-weight: 800;
-  font-size: 0.85rem;
-  border: var(--border-w) solid var(--text-dark);
-  box-shadow: 2px 2px 0 var(--text-dark);
+  font-size: 0.75rem;
+  border: 1px solid var(--text-dark);
+  box-shadow: 1.5px 1.5px 0 var(--text-dark);
+  white-space: nowrap;
 }
 
 .card-cat-badge {
-  position: absolute;
-  bottom: 14px;
-  right: 14px;
-  background: rgba(100, 210, 255, 0.2);
+  background: rgba(100, 210, 255, 0.15);
   color: var(--sky);
-  padding: 5px 14px;
-  border-radius: 8px;
-  font-size: 0.7rem;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.65rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  border: 1.5px solid rgba(100, 210, 255, 0.3);
-  backdrop-filter: blur(8px);
+  border: 1px solid rgba(100, 210, 255, 0.25);
+  white-space: nowrap;
 }
 
 .card-body {

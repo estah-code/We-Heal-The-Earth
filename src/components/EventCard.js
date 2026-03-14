@@ -49,11 +49,13 @@ export default function EventCard({
                     </div>
                 )}
                 <div className="card-img-overlay"></div>
-                {!isPlaceholder && <span className="card-date-badge">{dateBadge}</span>}
-                {!isPlaceholder && <span className="card-cat-badge">{category}</span>}
             </div>
 
             <div className="card-body">
+                <div className="card-badges-row">
+                    {!isPlaceholder && <span className="card-date-badge">{dateBadge}</span>}
+                    {!isPlaceholder && <span className="card-cat-badge">{category}</span>}
+                </div>
                 <h3 className="card-title">{title}</h3>
                 <div className="card-org">
                     <div className="card-org-avatar">ES</div>
