@@ -16,9 +16,12 @@ export default function HeroBackground({ variant = 'default' }) {
         let animationId;
         let particles = [];
         let fireflies = [];
+        let mouseX = 0;
+        let mouseY = 0;
 
         function resize() {
             const parent = canvas.parentElement;
+            if (!parent) return;
             canvas.width = parent.offsetWidth;
             canvas.height = parent.offsetHeight;
         }
@@ -29,39 +32,40 @@ export default function HeroBackground({ variant = 'default' }) {
             const w = canvas.width;
             const h = canvas.height;
 
-            // Define colors based on theme
-            let baseHue = 100; // Default green
-            if (theme === 'ocean') baseHue = 35; // Refined Orange #f8a533
+            let baseHue = 100;
+            if (theme === 'ocean') baseHue = 35;
 
-            // Floating leaf-like particles
-            for (let i = 0; i < 18; i++) {
+            // Rising growth particles (seeds/petals)
+            for (let i = 0; i < 25; i++) {
                 particles.push({
                     x: Math.random() * w,
                     y: Math.random() * h,
-                    size: 2 + Math.random() * 4,
-                    speedX: (Math.random() - 0.5) * 0.3,
-                    speedY: -0.15 - Math.random() * 0.35,
-                    opacity: 0.15 + Math.random() * 0.25,
-                    hue: baseHue + (Math.random() * 40 - 20),
+                    size: 1.5 + Math.random() * 3.5,
+                    speedX: (Math.random() - 0.5) * 0.2,
+                    speedY: -0.2 - Math.random() * 0.5,
+                    opacity: 0.1 + Math.random() * 0.2,
+                    hue: baseHue + (Math.random() * 30 - 15),
                     wobble: Math.random() * Math.PI * 2,
                     wobbleSpeed: 0.01 + Math.random() * 0.02,
+                    parallaxFactor: 0.02 + Math.random() * 0.04,
                 });
             }
 
-            // Firefly / sparkle particles
-            for (let i = 0; i < 12; i++) {
+            // Glimmering fireflies
+            for (let i = 0; i < 15; i++) {
                 fireflies.push({
                     x: Math.random() * w,
                     y: Math.random() * h,
-                    size: 1.5 + Math.random() * 2.5,
-                    speedX: (Math.random() - 0.5) * 0.2,
-                    speedY: (Math.random() - 0.5) * 0.2,
+                    size: 1 + Math.random() * 2,
+                    speedX: (Math.random() - 0.5) * 0.15,
+                    speedY: (Math.random() - 0.5) * 0.15,
                     opacity: 0,
-                    maxOpacity: 0.3 + Math.random() * 0.4,
+                    maxOpacity: 0.2 + Math.random() * 0.3,
                     phase: Math.random() * Math.PI * 2,
-                    phaseSpeed: 0.015 + Math.random() * 0.02,
-                    glowSize: 8 + Math.random() * 16,
-                    isGold: Math.random() > 0.6,
+                    phaseSpeed: 0.01 + Math.random() * 0.015,
+                    glowSize: 10 + Math.random() * 20,
+                    isGold: Math.random() > 0.7,
+                    parallaxFactor: 0.05 + Math.random() * 0.05,
                 });
             }
         }
@@ -71,91 +75,85 @@ export default function HeroBackground({ variant = 'default' }) {
             const w = canvas.width;
             const h = canvas.height;
 
-            // Draw floating particles
+            // Parallax offsets based on mouse
+            const targetOffsetX = (mouseX - w / 2) * 0.05;
+            const targetOffsetY = (mouseY - h / 2) * 0.05;
+
             particles.forEach((p) => {
                 p.wobble += p.wobbleSpeed;
-                p.x += p.speedX + Math.sin(p.wobble) * 0.3;
+                p.x += p.speedX + Math.sin(p.wobble) * 0.2;
                 p.y += p.speedY;
 
-                // Wrap around
-                if (p.y < -10) { p.y = h + 10; p.x = Math.random() * w; }
-                if (p.x < -10) p.x = w + 10;
-                if (p.x > w + 10) p.x = -10;
+                if (p.y < -20) { p.y = h + 20; p.x = Math.random() * w; }
+                if (p.x < -20) p.x = w + 20;
+                if (p.x > w + 20) p.x = -20;
+
+                const drawX = p.x + targetOffsetX * p.parallaxFactor;
+                const drawY = p.y + targetOffsetY * p.parallaxFactor;
 
                 ctx.save();
                 ctx.globalAlpha = p.opacity;
-                ctx.fillStyle = `hsla(${p.hue}, 50%, 55%, 1)`;
+                ctx.fillStyle = `hsla(${p.hue}, 40%, 65%, 1)`;
                 ctx.beginPath();
-
-                // Draw leaf-like shapes
-                ctx.ellipse(p.x, p.y, p.size, p.size * 0.6, p.wobble, 0, Math.PI * 2);
+                ctx.ellipse(drawX, drawY, p.size, p.size * 0.7, p.wobble, 0, Math.PI * 2);
                 ctx.fill();
 
-                // Soft glow around particle
-                const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size * 3);
-                gradient.addColorStop(0, `hsla(${p.hue}, 50%, 55%, 0.15)`);
-                gradient.addColorStop(1, 'transparent');
-                ctx.fillStyle = gradient;
-                ctx.fillRect(p.x - p.size * 3, p.y - p.size * 3, p.size * 6, p.size * 6);
-
+                const grad = ctx.createRadialGradient(drawX, drawY, 0, drawX, drawY, p.size * 4);
+                grad.addColorStop(0, `hsla(${p.hue}, 40%, 65%, 0.1)`);
+                grad.addColorStop(1, 'transparent');
+                ctx.fillStyle = grad;
+                ctx.fillRect(drawX - p.size * 4, drawY - p.size * 4, p.size * 8, p.size * 8);
                 ctx.restore();
             });
 
-            // Draw fireflies
             fireflies.forEach((f) => {
                 f.phase += f.phaseSpeed;
                 f.opacity = f.maxOpacity * (0.5 + 0.5 * Math.sin(f.phase));
                 f.x += f.speedX;
                 f.y += f.speedY;
 
-                // Gentle drift changes
-                if (Math.random() < 0.005) {
-                    f.speedX = (Math.random() - 0.5) * 0.2;
-                    f.speedY = (Math.random() - 0.5) * 0.2;
-                }
+                if (f.x < -50) f.x = w + 50;
+                if (f.x > w + 50) f.x = -50;
+                if (f.y < -50) f.y = h + 50;
+                if (f.y > h + 50) f.y = -50;
 
-                // Wrap
-                if (f.x < -20) f.x = w + 20;
-                if (f.x > w + 20) f.x = -20;
-                if (f.y < -20) f.y = h + 20;
-                if (f.y > h + 20) f.y = -20;
+                const drawX = f.x + targetOffsetX * f.parallaxFactor;
+                const drawY = f.y + targetOffsetY * f.parallaxFactor;
 
                 ctx.save();
                 ctx.globalAlpha = f.opacity;
-
-                // Outer glow
-                let glowHue = f.isGold ? 42 : 140;
-                if (theme === 'ocean') glowHue = f.isGold ? 42 : 35;
-
-                const glowColor = `${glowHue}, 38%, 54%`;
-                const glow = ctx.createRadialGradient(f.x, f.y, 0, f.x, f.y, f.glowSize);
-                glow.addColorStop(0, `hsla(${glowColor}, 0.6)`);
-                glow.addColorStop(0.4, `hsla(${glowColor}, 0.15)`);
+                let hue = f.isGold ? 45 : (theme === 'ocean' ? 35 : 120);
+                const glow = ctx.createRadialGradient(drawX, drawY, 0, drawX, drawY, f.glowSize);
+                glow.addColorStop(0, `hsla(${hue}, 60%, 70%, 0.4)`);
                 glow.addColorStop(1, 'transparent');
                 ctx.fillStyle = glow;
-                ctx.fillRect(f.x - f.glowSize, f.y - f.glowSize, f.glowSize * 2, f.glowSize * 2);
+                ctx.fillRect(drawX - f.glowSize, drawY - f.glowSize, f.glowSize * 2, f.glowSize * 2);
 
-                // Core dot
-                ctx.fillStyle = f.isGold ? '#D4A843' : (theme === 'ocean' ? '#f8a533' : '#7CB5A0');
+                ctx.fillStyle = f.isGold ? '#fff' : '#b8f03e';
                 ctx.beginPath();
-                ctx.arc(f.x, f.y, f.size, 0, Math.PI * 2);
+                ctx.arc(drawX, drawY, f.size, 0, Math.PI * 2);
                 ctx.fill();
-
                 ctx.restore();
             });
 
             animationId = requestAnimationFrame(draw);
         }
 
+        const handleMouseMove = (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        };
+
         resize();
         createParticles();
         draw();
 
-        const handleResize = () => { resize(); createParticles(); };
-        window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', () => { resize(); createParticles(); });
+        window.addEventListener('mousemove', handleMouseMove);
 
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', resize);
+            window.removeEventListener('mousemove', handleMouseMove);
             cancelAnimationFrame(animationId);
         };
     }, [theme]);

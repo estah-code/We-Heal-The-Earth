@@ -12,7 +12,6 @@ import {
     MapPin,
 } from "@/components/Icons";
 import HeroBackground from "@/components/HeroBackground";
-import PhotoSlider from "@/components/PhotoSlider";
 import EventCard from "@/components/EventCard";
 import { TreeLoader } from "@/components/TreeLoader";
 
@@ -52,7 +51,6 @@ export default function HomePage() {
         <div className="home-container">
             {/* HERO SECTION */}
             <section className="home-hero">
-                <PhotoSlider />
                 <HeroBackground />
                 <div className="hero-content-split">
                     <div className="hero-full-centered">

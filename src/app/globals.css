@@ -515,17 +515,30 @@ img {
 
 .hero-earth-image {
   position: absolute;
-  right: -5%;
+  right: 50%;
   top: 50%;
-  transform: translateY(-50%);
-  width: 600px;
-  max-width: 50vw;
-  height: 600px;
-  /* background: url('/earth-healing-bg.png') center / contain no-repeat; */
-  opacity: 0.12;
-  filter: saturate(0.8) contrast(1.1);
+  transform: translate(50%, -50%);
+  width: min(800px, 90vw);
+  height: min(800px, 90vh);
+  background: url('/earth-illustration.png') center / contain no-repeat;
+  opacity: 0.15;
+  filter: saturate(1.2) contrast(1.1) brightness(1.1);
   z-index: 2;
-  animation: earthPulse 8s ease-in-out infinite;
+  animation: earthBreath 12s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes earthBreath {
+  0%, 100% {
+    transform: translate(50%, -50%) scale(1) rotate(0deg);
+    opacity: 0.15;
+    filter: saturate(1.2) contrast(1.1) brightness(1.1) blur(0px);
+  }
+  50% {
+    transform: translate(50%, -50%) scale(1.08) rotate(2deg);
+    opacity: 0.22;
+    filter: saturate(1.4) contrast(1.2) brightness(1.2) blur(1px);
+  }
 }
 
 .hero-glow-orb {
