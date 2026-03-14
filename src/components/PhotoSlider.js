@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 
 const sliderImages = [
-    { url: '/slider-1.png', alt: 'Healing the Earth' },
-    { url: '/slider-2.png', alt: 'Education Impact' },
-    { url: '/slider-3.png', alt: 'Community Empowerment' },
-    { url: '/slider-4.png', alt: 'Vision 2047' },
+    { url: '/slider-1-earth.png', alt: 'Regenerative Agriculture' },
+    { url: '/slider-2-earth.png', alt: 'Lush Forest Ecosystem' },
+    { url: '/slider-3-earth.png', alt: 'Watering Growth' },
+    { url: '/slider-4-earth.png', alt: 'Nurturing the Earth' },
 ];
 
 export default function PhotoSlider() {
