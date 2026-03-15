@@ -1,6 +1,7 @@
 'use client';
 
 import { Leaf, GraduationCap, Zap } from '@/components/Icons';
+import HeroBackground from '@/components/HeroBackground';
 
 export default function AboutUsPage() {
     const trustees = [
@@ -39,6 +40,7 @@ export default function AboutUsPage() {
         <div className="about-container">
             {/* HERO SECTION */}
             <section className="about-hero">
+                <HeroBackground />
                 <div className="hero-content center">
                     <p className="eyebrow">ABOUT ESTAH SOCIETY</p>
                     <h1 className="hero-title">
@@ -48,10 +50,6 @@ export default function AboutUsPage() {
                         ESTAH as a platform envisions a world where Sustainable Development Goals (SDGs)
                         and Environmental, Social, and Governance (ESG) principles are at the core of human progress.
                     </p>
-                </div>
-                <div className="hero-decorations">
-                    <div className="blob blob-1"></div>
-                    <div className="blob blob-2"></div>
                 </div>
             </section>
 
@@ -142,7 +140,6 @@ export default function AboutUsPage() {
                     background: var(--bg);
                     color: var(--text);
                     min-height: 100vh;
-                    padding-top: var(--nav-h);
                 }
 
                 .center { text-align: center; }
@@ -150,7 +147,8 @@ export default function AboutUsPage() {
                 /* HERO */
                 .about-hero {
                     position: relative;
-                    padding: 120px 4vw 80px;
+                    padding: var(--nav-h) 4vw 80px;
+                    min-height: 70vh;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -181,33 +179,28 @@ export default function AboutUsPage() {
                 }
                 .hero-title em { font-style: italic; color: var(--lime); font-weight: 900; }
                 .hero-sub {
-                    font-size: 1.25rem;
-                    opacity: 0.8;
+                    font-size: 1.2rem;
+                    opacity: 0.85;
                     max-width: 700px;
                     margin: 0 auto;
                     line-height: 1.6;
                 }
                 
-                /* DECORATIONS */
-                .blob { position: absolute; filter: blur(100px); opacity: 0.1; z-index: 0; border-radius: 50%; }
-                .blob-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: var(--lime); }
-                .blob-2 { bottom: -10%; right: -10%; width: 400px; height: 400px; background: var(--sky); }
-
                 /* VISION */
                 .about-vision {
-                    padding: 100px 4vw;
-                    background: var(--surface1);
+                    padding: var(--section-py) 4vw;
+                    background: var(--bg-warm);
                 }
                 .vision-container {
                     max-width: 1200px;
                     margin: 0 auto;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    gap: 40px;
+                    gap: var(--gap-lg);
                 }
                 .v-card {
-                    padding: 60px;
-                    background: var(--bg);
+                    padding: var(--gap-lg);
+                    background: var(--surface1);
                     border-radius: 32px;
                     border: 1px solid rgba(255,255,255,0.05);
                 }
@@ -217,11 +210,11 @@ export default function AboutUsPage() {
                 }
                 .v-icon { color: var(--lime); margin-bottom: 24px; }
                 .v-card.highlight .v-icon { color: white; }
-                .v-card h3 { font-family: var(--font-sans); font-size: 2rem; margin-bottom: 16px; font-weight: 900; }
+                .v-card h3 { font-family: var(--font-sans); font-size: var(--fs-h3); margin-bottom: 16px; font-weight: 900; }
                 .v-card p { opacity: 0.8; line-height: 1.7; font-size: 1.1rem; }
 
                 /* HEADERS */
-                .section-header { margin-bottom: 60px; }
+                .section-header { margin-bottom: var(--gap-lg); }
                 .section-label {
                     color: var(--lime);
                     font-weight: 900;
@@ -240,14 +233,14 @@ export default function AboutUsPage() {
 
                 /* TRUSTEES & TEAM */
                 .about-leadership, .about-team {
-                    padding: 80px 4vw;
+                    padding: var(--section-py) 4vw;
                     max-width: 1400px;
                     margin: 0 auto;
                 }
                 .trustees-grid, .team-grid {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
-                    gap: 24px;
+                    gap: var(--gap-md);
                 }
                 .trustee-card, .team-card {
                     display: flex;
@@ -257,15 +250,15 @@ export default function AboutUsPage() {
                     padding: 24px;
                     border-radius: 20px;
                     border: 1px solid rgba(255,255,255,0.05);
-                    transition: transform 0.3s ease;
+                    transition: all 0.3s ease;
                 }
-                .trustee-card:hover, .team-card:hover { transform: translateY(-5px); border-color: var(--lime); }
+                .trustee-card:hover, .team-card:hover { transform: translateY(-5px); border-color: var(--lime); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
                 .t-avatar {
                     width: 70px;
                     height: 70px;
                     border-radius: 50%;
                     background: var(--lime);
-                    color: var(--bg);
+                    color: var(--bg-warm);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -284,18 +277,18 @@ export default function AboutUsPage() {
 
                 /* CTA */
                 .about-cta {
-                    padding: 0 4vw 140px;
+                    padding: 0 4vw var(--gap-xl);
                 }
                 .cta-box {
                     max-width: 1000px;
                     margin: 0 auto;
                     background: linear-gradient(135deg, var(--lime), #4E8C6F);
                     border-radius: 40px;
-                    padding: 80px 40px;
+                    padding: var(--gap-xl) var(--gap-lg);
                     text-align: center;
                     color: var(--bg);
                 }
-                .cta-title { font-family: var(--font-sans); font-size: 3rem; font-weight: 900; margin-bottom: 40px; }
+                .cta-title { font-family: var(--font-sans); font-size: var(--fs-h2); font-weight: 900; margin-bottom: 40px; }
                 .cta-title em { font-style: italic; color: white; }
                 .cta-btn {
                     padding: 18px 40px;
@@ -317,11 +310,11 @@ export default function AboutUsPage() {
                 }
 
                 @media (max-width: 640px) {
-                    .about-hero { padding: 80px 4vw 60px; }
-                    .v-card { padding: 40px 30px; }
+                    .about-hero { padding: 100px 4vw 60px; }
+                    .v-card { padding: 30px 20px; }
                     .trustees-grid, .team-grid { grid-template-columns: 1fr; }
-                    .cta-title { font-size: 2rem; }
-                    .cta-box { padding: 60px 20px; }
+                    .cta-title { font-size: 2.2rem; }
+                    .cta-box { padding: 60px 20px; border-radius: 24px; }
                 }
             `}</style>
         </div>
