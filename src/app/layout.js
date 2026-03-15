@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import GrainOverlay from '@/components/GrainOverlay';
 import { ToastProvider } from '@/components/MobileToast';
 import { ThemeProvider } from '@/context/ThemeContext';
+import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,6 +30,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-T2Z6MFYEGS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-T2Z6MFYEGS');
+          `}
+        </Script>
+      </head>
       <body style={{ fontFamily: 'var(--font-sans)' }}>
         <ThemeProvider>
           <ToastProvider>
