@@ -40,7 +40,6 @@ export default function ContactPage() {
                         <h3>Direct Links</h3>
                         <div className="direct-links">
                             <a href="mailto:contact@eventsmvp.org" className="direct-link">Email Us</a>
-                            <a href="#" className="direct-link">Join Volunteer WhatsApp</a>
                         </div>
                     </div>
                 </div>

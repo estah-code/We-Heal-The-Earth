@@ -35,9 +35,6 @@ export default function Footer() {
                             <a href="https://www.facebook.com/estah.org/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="Facebook">
                                 <Facebook size={18} />
                             </a>
-                            <a href="https://wa.me/919810196405" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="WhatsApp">
-                                <MessageCircle size={18} />
-                            </a>
                         </div>
                     </div>
 
