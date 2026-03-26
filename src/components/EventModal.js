@@ -103,7 +103,7 @@ export default function EventModal({ isOpen, onClose }) {
                             <span className="chip-icon"><Calendar size={20} /></span>
                             <div>
                                 <div className="chip-label">Date &amp; Time</div>
-                                <div className="chip-value">March 22, 2026 · 12:00 PM – 4:00 PM</div>
+                                <div className="chip-value">12:00 PM – 4:00 PM</div>
                             </div>
                         </div>
                         <div className="modal-chip">

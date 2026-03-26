@@ -1295,7 +1295,7 @@
         <div class="page active" id="page-events">
             <section class="events-hero">
                 <div class="hero-content">
-                    <p class="eyebrow">Estah Society · Events 2026</p>
+                    <p class="eyebrow">Estah Society · Events</p>
                     <h1 class="hero-title">Upcoming <em>Events</em></h1>
                     <p class="hero-sub">Join us in transforming communities through education, empowerment, and
                         sustainable action across India.</p>
@@ -1319,7 +1319,7 @@
                                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                             <div class="card-img-fallback" style="display:none">🏃</div>
                             <div class="card-img-overlay"></div>
-                            <span class="card-date-badge">22 MAR</span>
+                            <span class="card-date-badge"></span>
                             <span class="card-cat-badge">#Sustainability</span>
                         </div>
                         <div class="card-body">
@@ -1334,7 +1334,7 @@
                                         <line x1="16" y1="2" x2="16" y2="6" />
                                         <line x1="8" y1="2" x2="8" y2="6" />
                                         <line x1="3" y1="10" x2="21" y2="10" />
-                                    </svg><span>Sun, 22 March 2026 · 12:00 PM – 4:00 PM</span></div>
+                                    </svg><span>12:00 PM – 4:00 PM</span></div>
                                 <div class="card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                                         stroke="#C9A84C" stroke-width="2">
                                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -1497,7 +1497,7 @@
                     <div class="modal-chip"><span class="chip-icon">📅</span>
                         <div>
                             <div class="chip-label">Date &amp; Time</div>
-                            <div class="chip-value">March 22, 2026 · 12:00 PM – 4:00 PM</div>
+                            <div class="chip-value">12:00 PM – 4:00 PM</div>
                         </div>
                     </div>
                     <div class="modal-chip"><span class="chip-icon">📍</span>
@@ -1637,7 +1637,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 Estah Society · WE HEAL THE EARTH Initiative</p>
+            <p>© Estah Society · WE HEAL THE EARTH Initiative</p>
             <a href="#">Privacy Policy</a><a href="#">Terms</a>
         </div>
     </footer>

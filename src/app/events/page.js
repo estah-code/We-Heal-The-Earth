@@ -55,7 +55,7 @@ function fireConfetti(canvas) {
     requestAnimationFrame(draw);
 }
 
-const tickerText = 'RUN FOR EDUCATION: EMPOWERING 40K STUDENTS — RUN FOR LIVELIHOOD: INSPIRING SUSTAINABLE FUTURES — WOMEN ON RUN: STRENGTH & SELF-CONFIDENCE — RUN FOR WATER: HEALING COMMUNITIES THROUGH CONSERVATION — 22 MARCH 2026 — GACHIBOWLI STADIUM, HYDERABAD — WE HEAL THE EARTH';
+const tickerText = 'RUN FOR EDUCATION: EMPOWERING 40K STUDENTS — RUN FOR LIVELIHOOD: INSPIRING SUSTAINABLE FUTURES — WOMEN ON RUN: STRENGTH & SELF-CONFIDENCE — RUN FOR WATER: HEALING COMMUNITIES THROUGH CONSERVATION — GACHIBOWLI STADIUM, HYDERABAD — WE HEAL THE EARTH';
 
 import { EVENTS_DATA } from '@/data/events';
 
@@ -103,7 +103,7 @@ export default function EventsPage() {
                 <HeroBackground />
 
                 <div className="hero-content">
-                    <p className="eyebrow">WE HEAL THE EARTH · Events 2026</p>
+                    <p className="eyebrow">WE HEAL THE EARTH · Events</p>
                     <h1 className="hero-title">
                         Upcoming <em>Events</em>
                     </h1>

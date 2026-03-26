@@ -6,8 +6,8 @@ import { Calendar, MapPin } from './Icons';
 export default function EventCard({
     title = "Run for Education",
     category = "#Sustainability",
-    dateBadge = "22 MAR",
-    dateFull = "March 22, 2026",
+    dateBadge = "",
+    dateFull = "",
     location = "Hyderabad",
     description = "An initiative by WE HEAL THE EARTH — run for a child's future, equal opportunities, and a better tomorrow.",
     imageUrl = "https://skillbloomer.com/uploads/events/1770985327_698f176f3b880_featured.jpg",
