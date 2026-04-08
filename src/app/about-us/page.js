@@ -6,9 +6,7 @@ import HeroBackground from '@/components/HeroBackground';
 export default function AboutUsPage() {
     const trustees = [
         { name: "V ATCHUTA RAO", title: "Founder", img: "https://estah.org/wp-content/uploads/elementor/thumbs/1701503690183-removebg-preview-quwinh8ibqxzx90sc7exh06xnlgd1lgte318cmvmj4.jpg" },
-        // { name: "JAYAKAR RAO", title: "Trustee", img: "https://estah.org/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2025-06-12-at-10.31.57-AM-removebg-preview-1-1-r76nyytre0wg4oflmrew6iv28xm6m4zvh0umdf8n2o.jpg" },
-        // { name: "BHASKAR REDDY DASARI", title: "Trustee", img: "https://estah.org/wp-content/uploads/elementor/thumbs/1517725513392-removebg-preview-r76npcx5izqxg6e1qlw6oy5fn4z3xiunhgrxrlhiog.jpg" },
-        // { name: "VENKAT REDDY", title: "Trustee", img: "https://estah.org/wp-content/uploads/elementor/thumbs/Screenshot-from-2024-10-01-09-46-09-quwgw8nej0ditovnlvcipyoiwd5d6oexd2z80gn55c.png" },
+
         { name: "CHERKURI VAGDEVI", title: "Trustee", img: "https://estah.org/wp-content/uploads/elementor/thumbs/bg-image-quwgpdfulkz408uqpehn072ao0ztya5ir3eisotols.jpg" },
         { name: "V GRACE EVELYN", title: "Trustee", img: "https://estah.org/wp-content/uploads/elementor/thumbs/18-quwgytpfblwwr34hihkl2t75piepcpocpvkaiut61c.png" }
     ];
